@@ -1,5 +1,6 @@
 import argparse
 from agent.tot_agent import TreeOfThoughtAgent
+from agent.agent_summary import SummarizingTreeOfThoughtAgent
 from agent.naive_agent import NaiveAgent
 from env.game24 import Game24
 import os
@@ -10,12 +11,25 @@ import time
 
 def run(args):
     agent_cls = {"tot": TreeOfThoughtAgent,
+                 "summary": SummarizingTreeOfThoughtAgent,
                  "naive": NaiveAgent,
                  "cot": NaiveAgent}.get(args.planning, NaiveAgent)
-    agent = agent_cls(backend=args.backend, temperature=args.temperature, prompt_sample=args.prompt_sample,
-                      method_generate=args.method_generate, method_evaluate=args.method_evaluate,
-                      method_select=args.method_select, n_generate_sample=args.n_generate_sample,
-                      n_evaluate_sample=args.n_evaluate_sample, n_select_sample=args.n_select_sample)
+    
+    agent_init_kwargs = {
+        'backend': args.backend,
+        'temperature': args.temperature,
+        'prompt_sample': args.prompt_sample,
+        'method_generate': args.method_generate,
+        'method_evaluate': args.method_evaluate,
+        'method_select': args.method_select,
+        'n_generate_sample': args.n_generate_sample,
+        'n_evaluate_sample': args.n_evaluate_sample,
+        'n_select_sample': args.n_select_sample
+    }
+    if args.planning == 'summary':
+        agent_init_kwargs['summary_size_percentage'] = args.summary_size_percentage
+
+    agent = agent_cls(**agent_init_kwargs)
     env = Game24(args.task_file_path, args.feedback, args.max_step)
     cur_time = int(time.time())
     file = f'logs/lmmmpc/{args.task}/{args.backend}_{args.temperature}_{args.method_generate}{args.n_generate_sample}_{args.method_evaluate}{args.n_evaluate_sample}_{args.method_select}{args.n_select_sample}_start{args.task_start_index}_end{args.task_end_index}_{args.planning}_feedback_{args.feedback}time{cur_time}.json'
@@ -31,6 +45,10 @@ def run(args):
         done = False
         while not done:
             action, agent_info = agent.act(env, obs)
+            if agent_info.get('summary'):
+                print(f"Reflection Summary: {agent_info['summary']}")
+            if agent_info.get('value_summary'):
+                print(f"Value Summary: {agent_info['value_summary']}")
             obs, reward, done, env_info = env.step(action)
             agent.update(obs, reward, done, env_info)
             log['agent_info'].append(agent_info)
@@ -88,8 +106,9 @@ def parse_args():
     args.add_argument('--n_evaluate_sample', type=int, default=1)
     args.add_argument('--n_select_sample', type=int, default=1)
     args.add_argument('--feedback', action='store_true')
-    args.add_argument('--planning', type=str, choices=['tot', 'cot', 'naive'], default='tot')
+    args.add_argument('--planning', type=str, choices=['tot', 'cot', 'naive', 'summary'], default='tot')
     args.add_argument('--max_step', type=int, default=20)
+    args.add_argument('--summary_size_percentage', type=int, default=20, help="The target size of the summary as a percentage of the input text.")
 
     args = args.parse_args()
     if args.planning == "naive":

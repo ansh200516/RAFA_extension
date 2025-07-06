@@ -9,8 +9,9 @@ TASK="game24"
 TASK_FILE_PATH="24.csv"
 TASK_START_INDEX=900
 TASK_END_INDEX=901
-PLANNING="tot"
+PLANNING="summary"
 FEEDBACK_ENABLED=true # Set to true to enable feedback, false to disable
+SUMMARY_SIZE_PERCENTAGE=10 # Percentage of the input text to use for the summary
 
 # Tree of Thoughts (ToT) arguments
 PROMPT_SAMPLE="standard"
@@ -38,6 +39,10 @@ ARGS=(
     --planning "$PLANNING"
 )
 
+if [ "$PLANNING" = "summary" ]; then
+    ARGS+=(--summary_size_percentage "$SUMMARY_SIZE_PERCENTAGE")
+fi
+
 if [ "$FEEDBACK_ENABLED" = true ]; then
     ARGS+=(--feedback)
 fi
@@ -52,6 +57,9 @@ echo "  Task File:          $TASK_FILE_PATH"
 echo "  Indices:            $TASK_START_INDEX-$TASK_END_INDEX"
 echo "  Planning Strategy:  $PLANNING"
 echo "  Feedback:           $FEEDBACK_ENABLED"
+if [ "$PLANNING" = "summary" ]; then
+    echo "  Summary Size %:     $SUMMARY_SIZE_PERCENTAGE"
+fi
 echo
 echo "Tree of Thoughts Parameters:"
 echo "  Prompt Sample:      $PROMPT_SAMPLE"
