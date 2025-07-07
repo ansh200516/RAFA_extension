@@ -158,13 +158,13 @@ class SummarizingTreeOfThoughtAgent(Agent):
         
         input_text = old_summary + "\n" + new_reflection
         input_word_count = len(input_text.split())
-        summary_target_size = int(input_word_count * (self.summary_size_percentage / 100.0))
+        summary_target_size = max(1, int(input_word_count * (self.summary_size_percentage / 100.0)))
         puzzle = env.puzzle
 
         summary_prompt = (
             f"You are an expert Game of 24 strategist. Your goal is to synthesize learnings from past attempts to solve the current puzzle. "
             f"The current puzzle involves the numbers: {puzzle}.\n\n"
-            "Combine the 'Previous Summary' with the 'New Learning' to create a refined, concise strategy. Focus only on insights that will help solve this specific puzzle or similar puzzles. Discard generic advice.\n\n"
+            "Combine the 'Previous Summary' with the 'New Learning' to create a refined, concise strategy. Focus only on insights that will help solve this specific puzzle. Discard generic advice.\n\n"
             f"Previous Summary:\n{old_summary}\n\n"
             f"New Learning from the most recent attempt:\n{new_reflection}\n\n"
             f"Provide an updated summary of actionable strategies for the numbers {puzzle}. The summary should be approximately {summary_target_size} words."
@@ -176,7 +176,7 @@ class SummarizingTreeOfThoughtAgent(Agent):
         
         value_input_text = old_value_summary + "\n" + new_value_reflection
         value_input_word_count = len(value_input_text.split())
-        value_summary_target_size = int(value_input_word_count * (self.summary_size_percentage / 100.0))
+        value_summary_target_size = max(1, int(value_input_word_count * (self.summary_size_percentage / 100.0)))
 
         value_summary_prompt = (
             "You are an expert evaluator for the Game of 24. Your goal is to refine your judgment on what makes a promising or unpromising step towards solving the puzzle. "

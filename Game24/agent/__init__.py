@@ -5,17 +5,18 @@ from tenacity import wait_fixed
 
 completion_tokens = prompt_tokens = 0
 openai.api_key = os.getenv("OPENAI_API_KEY", "")
+client = openai.OpenAI()
 
 
-@retry(retry=retry_if_exception_type(openai.error.OpenAIError), 
-       wait=wait_random_exponential(min=1, max=60), 
+@retry(retry=retry_if_exception_type(openai.OpenAIError),
+       wait=wait_random_exponential(min=1, max=60),
        stop=stop_after_attempt(100))
 def completions_with_backoff(**kwargs):
     if "prompt" in kwargs:
-        return openai.Completion.create(**kwargs)
+        return client.completions.create(**kwargs)
     else:
         assert "messages" in kwargs, "Either prompt or messages must be provided"
-        return openai.ChatCompletion.create(**kwargs)
+        return client.chat.completions.create(**kwargs)
 
 
 def gpt_with_history(prompt, history, model="gpt-4", temperature=0.7, max_tokens=1000, n=1, stop=None) -> list:
@@ -44,23 +45,18 @@ def chatgpt(messages, model="gpt-4", temperature=0.7, max_tokens=1000, n=1, stop
         if "davinci" in model:
             contents = [m["content"] for m in messages]
             prompt = "\n".join(contents)
-            if API == 'us':
-                res = completions_with_backoff(
-                    prompt=prompt, model=model, temperature=temperature, 
-                    max_tokens=max_tokens, n=cnt, stop=stop)
-            else:
-                res = completions_with_backoff(
-                    prompt=prompt, engine=model, temperature=temperature, 
-                    max_tokens=max_tokens, n=cnt, stop=stop)
+            res = completions_with_backoff(
+                prompt=prompt, model=model, temperature=temperature,
+                max_tokens=max_tokens, n=cnt, stop=stop)
 
-            outputs.extend([choice["text"] for choice in res["choices"]])
+            outputs.extend([choice.text for choice in res.choices])
         else:
             res = completions_with_backoff(model=model, messages=messages, temperature=temperature, max_tokens=max_tokens,
                                        n=cnt, stop=stop)
-            outputs.extend([choice["message"]["content"] for choice in res["choices"]])
+            outputs.extend([choice.message.content for choice in res.choices])
         # log completion tokens
-        completion_tokens += res["usage"]["completion_tokens"]
-        prompt_tokens += res["usage"]["prompt_tokens"]
+        completion_tokens += res.usage.completion_tokens
+        prompt_tokens += res.usage.prompt_tokens
     return outputs
 
 

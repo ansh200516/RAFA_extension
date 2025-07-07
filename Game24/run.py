@@ -36,7 +36,12 @@ def run(args):
     agent = agent_cls(**agent_init_kwargs)
     env = Game24(args.task_file_path, args.feedback, args.max_step)
     cur_time = int(time.time())
-    file = f'logs/lmmmpc/{args.task}/{args.backend}_{args.temperature}_{args.method_generate}{args.n_generate_sample}_{args.method_evaluate}{args.n_evaluate_sample}_{args.method_select}{args.n_select_sample}_start{args.task_start_index}_end{args.task_end_index}_{args.planning}_feedback_{args.feedback}time{cur_time}.json'
+    planning_str = args.planning
+    if args.planning == 'summary':
+        planning_str += f'_{args.summary_size_percentage}'
+    if args.planning == 'prevk':
+        planning_str += f'_{args.k_memory}'
+    file = f'log/lmmmpc/{args.task}/{args.backend}_{args.temperature}_{args.method_generate}{args.n_generate_sample}_{args.method_evaluate}{args.n_evaluate_sample}_{args.method_select}{args.n_select_sample}_start{args.task_start_index}_end{args.task_end_index}_{planning_str}_feedback_{args.feedback}time{cur_time}.json'
     
     os.makedirs(os.path.dirname(file), exist_ok=True)
     log_data = {'logs': [], 'summary': {}}
