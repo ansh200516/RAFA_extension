@@ -9,7 +9,8 @@ TASK="game24"
 TASK_FILE_PATH="24.csv"
 TASK_START_INDEX=900
 TASK_END_INDEX=901
-PLANNING="summary"
+PLANNING="prevk"
+K_MEMORY=2
 FEEDBACK_ENABLED=true # Set to true to enable feedback, false to disable
 SUMMARY_SIZE_PERCENTAGE=10 # Percentage of the input text to use for the summary
 
@@ -43,6 +44,10 @@ if [ "$PLANNING" = "summary" ]; then
     ARGS+=(--summary_size_percentage "$SUMMARY_SIZE_PERCENTAGE")
 fi
 
+if [ "$PLANNING" = "prevk" ]; then
+    ARGS+=(--k_memory "$K_MEMORY")
+fi
+
 if [ "$FEEDBACK_ENABLED" = true ]; then
     ARGS+=(--feedback)
 fi
@@ -59,6 +64,9 @@ echo "  Planning Strategy:  $PLANNING"
 echo "  Feedback:           $FEEDBACK_ENABLED"
 if [ "$PLANNING" = "summary" ]; then
     echo "  Summary Size %:     $SUMMARY_SIZE_PERCENTAGE"
+fi
+if [ "$PLANNING" = "prevk" ]; then
+    echo "  K Memory:           $K_MEMORY"
 fi
 echo
 echo "Tree of Thoughts Parameters:"

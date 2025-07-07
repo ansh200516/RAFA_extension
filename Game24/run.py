@@ -1,6 +1,7 @@
 import argparse
 from agent.tot_agent import TreeOfThoughtAgent
 from agent.agent_summary import SummarizingTreeOfThoughtAgent
+from agent.agent_prevk import TreeOfThoughtAgentPrevK
 from agent.naive_agent import NaiveAgent
 from env.game24 import Game24
 import os
@@ -13,7 +14,8 @@ def run(args):
     agent_cls = {"tot": TreeOfThoughtAgent,
                  "summary": SummarizingTreeOfThoughtAgent,
                  "naive": NaiveAgent,
-                 "cot": NaiveAgent}.get(args.planning, NaiveAgent)
+                 "cot": NaiveAgent,
+                 "prevk": TreeOfThoughtAgentPrevK}.get(args.planning, NaiveAgent)
     
     agent_init_kwargs = {
         'backend': args.backend,
@@ -28,6 +30,8 @@ def run(args):
     }
     if args.planning == 'summary':
         agent_init_kwargs['summary_size_percentage'] = args.summary_size_percentage
+    if args.planning == 'prevk':
+        agent_init_kwargs['k_memory'] = args.k_memory
 
     agent = agent_cls(**agent_init_kwargs)
     env = Game24(args.task_file_path, args.feedback, args.max_step)
@@ -106,9 +110,10 @@ def parse_args():
     args.add_argument('--n_evaluate_sample', type=int, default=1)
     args.add_argument('--n_select_sample', type=int, default=1)
     args.add_argument('--feedback', action='store_true')
-    args.add_argument('--planning', type=str, choices=['tot', 'cot', 'naive', 'summary'], default='tot')
+    args.add_argument('--planning', type=str, choices=['tot', 'cot', 'naive', 'summary', 'prevk'], default='tot')
     args.add_argument('--max_step', type=int, default=20)
     args.add_argument('--summary_size_percentage', type=int, default=20, help="The target size of the summary as a percentage of the input text.")
+    args.add_argument('--k_memory', type=int, default=None)
 
     args = args.parse_args()
     if args.planning == "naive":

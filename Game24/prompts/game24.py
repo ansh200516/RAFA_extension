@@ -103,7 +103,7 @@ Your output:
 # 1-shot
 propose_prompt = '''Now use numbers and basic arithmetic operations (+ - * /) to generate possible next steps. Make sure use steps that is sure to leads to 24 and avoid steps that are impossible to generate 24. Note that it is possible that we are considering intermediate steps so the numbers of the input may be less than 4.
 
-Only output the possible next steps, do not output any other text, do not explain anything, no need of writing any Note or clarifications.
+Only output the possible next steps, do not output any other text, DON'T EXPLAIN ANYTHING, DON'T WRITE ANY NOTES, DON'T WRITE ANY COMMENTS, JUST OUTPUT THE POSSIBLE NEXT STEPS IN THE FORMAT BELOW.
 Strictly follow the output format:
 <number> <operation> <number> = <result> (left: <remaining_numbers>)
 <number> <operation> <number> = <result> (left: <remaining_numbers>)
