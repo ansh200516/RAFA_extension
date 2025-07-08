@@ -1,0 +1,1074 @@
+{
+    "logs": [
+        {
+            "idx": 900,
+            "agent_info": [
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                ""
+                            ],
+                            "new_ys": [
+                                "4 + 6 = 10 (left: 10 5 10)\n",
+                                "4 * 6 = 24 (left: 24 5)\n",
+                                "10 - 4 = 6 (left: 6 5 10)\n",
+                                "10 / 5 = 2 (left: 2 4 6)\n",
+                                "6 - 4 = 2 (left: 2 5 2)\n",
+                                "5 + 2 = 7 (left: 7 2)\n",
+                                "7 + 2 = 9 (left: 9)\n",
+                                "9 + 15 = 24 (left: 24)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                60.0,
+                                0.003,
+                                20.002,
+                                0.003,
+                                0.003,
+                                0.003,
+                                60.0
+                            ],
+                            "select_new_ys": [
+                                "4 * 6 = 24 (left: 24 5)\n",
+                                "9 + 15 = 24 (left: 24)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "4 * 6 = 24 (left: 24 5)\n",
+                                "9 + 15 = 24 (left: 24)\n"
+                            ],
+                            "new_ys": [
+                                "4 * 6 = 24 (left: 24 5)\n24 + 0 = 24 (left: 0)\n",
+                                "4 * 6 = 24 (left: 24 5)\n24 - 0 = 24 (left: 0)\n",
+                                "4 * 6 = 24 (left: 24 5)\n24 * 1 = 24 (left: 1)\n",
+                                "4 * 6 = 24 (left: 24 5)\n24 / 1 = 24 (left: 1)\n",
+                                "9 + 15 = 24 (left: 24)\nAnswer: 4 + 6 + 10 = 20, then 24 - 4 = 20 (not correct); alternative solution needed.\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.002
+                            ],
+                            "select_new_ys": [
+                                "4 * 6 = 24 (left: 24 5)\n24 + 0 = 24 (left: 0)\n",
+                                "4 * 6 = 24 (left: 24 5)\n24 - 0 = 24 (left: 0)\n"
+                            ]
+                        },
+                        {
+                            "step": 2,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "4 * 6 = 24 (left: 24 5)\n24 + 0 = 24 (left: 0)\n",
+                                "4 * 6 = 24 (left: 24 5)\n24 - 0 = 24 (left: 0)\n"
+                            ],
+                            "new_ys": [
+                                "4 * 6 = 24 (left: 24 5)\n24 + 0 = 24 (left: 0)\n0\n",
+                                "4 * 6 = 24 (left: 24 5)\n24 - 0 = 24 (left: 0)\n0 (no operations possible)\n"
+                            ],
+                            "values": [
+                                0.001,
+                                0.002
+                            ],
+                            "select_new_ys": [
+                                "4 * 6 = 24 (left: 24 5)\n24 - 0 = 24 (left: 0)\n0 (no operations possible)\n",
+                                "4 * 6 = 24 (left: 24 5)\n24 + 0 = 24 (left: 0)\n0\n"
+                            ]
+                        },
+                        {
+                            "step": 3,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "4 * 6 = 24 (left: 24 5)\n24 - 0 = 24 (left: 0)\n0 (no operations possible)\n",
+                                "4 * 6 = 24 (left: 24 5)\n24 + 0 = 24 (left: 0)\n0\n"
+                            ],
+                            "new_ys": [
+                                "4 * 6 = 24 (left: 24 5)\n24 - 0 = 24 (left: 0)\n0 (no operations possible)\nPlease provide the four numbers you want to use for the game.\n",
+                                "4 * 6 = 24 (left: 24 5)\n24 + 0 = 24 (left: 0)\n0\n0 (no operations possible)\n"
+                            ],
+                            "values": [
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "4 * 6 = 24 (left: 24 5)\n24 - 0 = 24 (left: 0)\n0 (no operations possible)\nPlease provide the four numbers you want to use for the game.\n",
+                                "4 * 6 = 24 (left: 24 5)\n24 + 0 = 24 (left: 0)\n0\n0 (no operations possible)\n"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                ""
+                            ],
+                            "new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5)\n",
+                                "6 * 4 = 24 (left: 5 10)\n",
+                                "10 / 5 = 2 (left: 6 2)\n",
+                                "6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5)\n",
+                                "6 * 4 = 24 (left: 5 10)\n",
+                                "10 / 5 = 2 (left: 6 2)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5)\n"
+                            ],
+                            "new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 / 5 = 2 (left: 2 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 * 2 = 20 (left: 20)\n",
+                                "6 * 4 = 24 (left: 10 5)\n5 + 10 = 15 (left: 15)\n",
+                                "6 * 4 = 24 (left: 10 5)\n5 * 2 = 10 (left: 10)\n",
+                                "6 * 4 = 24 (left: 10 5)\n5 / 5 = 1 (left: 1 10)\n",
+                                "10 - 5 = 5 (left: 6 5)\n6 * 4 = 24 (left: 5)\n",
+                                "10 - 5 = 5 (left: 6 5)\n10 - 5 = 5 (left: 10)\n",
+                                "10 - 5 = 5 (left: 6 5)\n6 + 10 = 16 (left: 5)\n",
+                                "10 - 5 = 5 (left: 6 5)\n6 * 5 = 30 (left: 10)\n",
+                                "10 - 5 = 5 (left: 6 5)\n10 - 5 = 5 (left: 6)\n",
+                                "10 - 5 = 5 (left: 6 5)\n6 + 5 = 11 (left: 10)\n",
+                                "10 - 5 = 5 (left: 6 5)\n6 - 5 = 1 (left: 10)\n",
+                                "10 - 5 = 5 (left: 6 5)\n10 / 5 = 2 (left: 6)\n",
+                                "10 - 5 = 5 (left: 6 5)\n6 / 5 = 1.2 (left: 10)\n",
+                                "10 - 5 = 5 (left: 6 5)\n10 / 2 = 5 (left: 6)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 / 5 = 2 (left: 2 5)\n"
+                            ]
+                        },
+                        {
+                            "step": 2,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 / 5 = 2 (left: 2 5)\n"
+                            ],
+                            "new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 - 5 = 5 (left: 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 / 5 = 2 (left: 2)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n5 * 5 = 25 (left: 25)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n5 + 10 = 15 (left: 15)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 - 5 = 5 (left: 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 / 5 = 2 (left: 2)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 / 5 = 2 (left: 2 5)\n6 * 4 = 24 (left: 10 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 / 5 = 2 (left: 2 5)\n10 * 4 = 40 (left: 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 / 5 = 2 (left: 2 5)\n10 + 4 = 14 (left: 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 / 5 = 2 (left: 2 5)\n6 * 4 = 24 (left: 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 / 5 = 2 (left: 2 5)\n6 * 4 = 24 (left: 10 5)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                60.0,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 - 5 = 5 (left: 5)\n"
+                            ]
+                        },
+                        {
+                            "step": 3,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 - 5 = 5 (left: 5)\n"
+                            ],
+                            "new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n6 * 4 = 24 (left: )\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n6 / 4 = 1.5 (left: 1.5 5 10)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n4 / 6 = 0.666... (left: 0.666... 5 10)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n6 - 4 = 2 (left: 2 5 10)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n4 - 6 = -2 (left: -2 5 10)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n10 - 6 = 4 (left: 4 4 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n10 / 6 \u2248 1.666... (left: 1.666... 4 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n5 - 4 = 1 (left: 1 6)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n5 / 4 = 1.25 (left: 1.25 6)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n10 - 4 = 6 (left: 6 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 - 5 = 5 (left: 5)\n6 * 4 = 24 (left: 10 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 - 5 = 5 (left: 5)\n10 * 4 = 40 (left: 5,6,24)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 - 5 = 5 (left: 5)\n10 - 5 = 5 (left: 6,24)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 - 5 = 5 (left: 5)\n6 * 4 = 24 (left: 10,5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 - 5 = 5 (left: 5)\n6 / 5 = 1.2 (left: 10,4)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 - 5 = 5 (left: 5)\n10 - 4 = 6 (left: 5,6)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 - 5 = 5 (left: 5)\n5 * 4 = 20 (left: 6,20)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n10 - 5 = 5 (left: 5)\n4 + 10 = 14 (left: 5,14)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n6 * 4 = 24 (left: )\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n6 / 4 = 1.5 (left: 1.5 5 10)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To solve 4, 5, 6, 10 for 24, prioritize combining larger numbers to efficiently reach the target. Start by exploring multiplication or division of 6 and 4: for example, 6 * 4 = 24, using 6 and 4 directly. This immediately solves the puzzle if possible. If not, consider combining 10 and 5: 10 - 5 = 5, then multiply or add to reach 24, but this often leads to dead ends. Alternatively, use 10 and 4: 10 - 4 = 6, then multiply by 4 or 6 to reach",
+                    "value_summary": "In evaluating moves for 4, 5, 6, 10, prioritize steps that produce intermediate results closer to 24 and leave manageable remaining numbers. Valid moves should use each original number once without reusing or dropping arbitrarily. Producing 24 directly (e.g., via multiplication of 4 and 6) is highly promising, leaving smaller residuals that are easier to resolve. Moves resulting in leftover numbers that cannot combine to 24,"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                ""
+                            ],
+                            "new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n",
+                                "5 + 5 = 10 (left: 6 10)\n",
+                                "6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                2.001,
+                                0.003,
+                                20.002,
+                                0.003,
+                                0.003,
+                                20.002
+                            ],
+                            "select_new_ys": [
+                                "10 - 5 = 5 (left: 6 5 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 5 = 5 (left: 6 5 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n10 - 5 = 5 (left: 6 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 5 10)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n5 + 5 = 10 (left: 6 10)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 5 10)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n10 - 5 = 5 (left: 6 5)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                1.002,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 10 5)\n"
+                            ]
+                        },
+                        {
+                            "step": 2,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 10 5)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n(10 - 5) * 6 = 30 (left: 30)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n(10 - 5) * 4 = 20 (left: 20)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 - 5 = 5 (left: 6 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n6 * 4 = 24 (left: 5 10)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 10 5)\n10 / 5 = 2 (left: 2 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 10 5)\n5 * 2 = 10 (left: 10)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 10 5)\n5 + 5 = 10 (left: 10)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 10 5)\n5 - 5 = 0 (left: 0 10)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 10 5)\n10 / 2 = 5 (left: 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n6 * 4 = 24 (left: 10 5)\n10 - 10 = 0 (left: 0)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                60.0,
+                                0.003,
+                                60.0,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n"
+                            ]
+                        },
+                        {
+                            "step": 3,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n10 - 5 = 5 (left: 24 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n24 / 1 = 24 (left: 5 1)  *(Note: Since only 10 and 5 remain, to reach 24, we can proceed as below)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n(Alternative steps focusing on the core logic)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n10 - 5 = 5 (left: 24 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n24 / 1 = 24 *(But since no 1 is present, discard this)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n(Alternatively, proceed as below)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\nRemaining numbers: 10 and 5\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 24 2)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n6 * 4 = 24 (left: 10 5)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "For 4, 5, 6, 10, prioritize combining pairs that progress toward 24 through valid operations. Start by pairing 6 and 4 to get 24 directly: 6 * 4 = 24. After this, the remaining numbers are 10 and 5. Use these remaining numbers to reach 24, for example, by computing (10 - 5) * ",
+                    "value_summary": "Prioritize moves yielding intermediate results near 24 with manageable remaining numbers; avoid impossible"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                ""
+                            ],
+                            "new_ys": [
+                                "6 * 4 = 24 (left: 10 24)\n",
+                                "10 + 14 = 24 (left: 24)\n",
+                                "10 * 2.4 = 24 (left: 2.4 24)\n"
+                            ],
+                            "values": [
+                                60.0,
+                                60.0,
+                                60.0
+                            ],
+                            "select_new_ys": [
+                                "6 * 4 = 24 (left: 10 24)\n",
+                                "10 + 14 = 24 (left: 24)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "6 * 4 = 24 (left: 10 24)\n",
+                                "10 + 14 = 24 (left: 24)\n"
+                            ],
+                            "new_ys": [
+                                "6 * 4 = 24 (left: 10 24)\n6 * 4 = 24 (left: 10 5)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 + 5 = 15 (left: 15 4)\n",
+                                "6 * 4 = 24 (left: 10 24)\n15 - 4 = 11 (left: 11)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 - 5 = 5 (left: 6 4)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n",
+                                "6 * 4 = 24 (left: 10 24)\n6 - 4 = 2 (left: 2 2)\n",
+                                "6 * 4 = 24 (left: 10 24)\n6 / 2 = 3 (left: 3 4)\n",
+                                "6 * 4 = 24 (left: 10 24)\n4 + 2 = 6 (left: 6 2)\n",
+                                "6 * 4 = 24 (left: 10 24)\n4 * 2 = 8 (left: 8 10 5)\n",
+                                "10 + 14 = 24 (left: 24)\nAnswer: 10 + 14 = 24\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                60.0,
+                                41.0,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.0
+                            ],
+                            "select_new_ys": [
+                                "6 * 4 = 24 (left: 10 24)\n10 - 5 = 5 (left: 6 4)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n"
+                            ]
+                        },
+                        {
+                            "step": 2,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "6 * 4 = 24 (left: 10 24)\n10 - 5 = 5 (left: 6 4)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n"
+                            ],
+                            "new_ys": [
+                                "6 * 4 = 24 (left: 10 24)\n10 - 5 = 5 (left: 6 4)\n6 * 4 = 24 (left: )\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n6 * 4 = 24 (left: )\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 - 5 = 5 (left: 10 5)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n6 + 4 = 10 (left: 10 5)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n6 - 4 = 2 (left: 2 10 5)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n4 + 6 = 10 (left: 10 5)\n"
+                            ],
+                            "values": [
+                                0.0,
+                                0.0,
+                                0.003,
+                                60.0,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 - 5 = 5 (left: 10 5)\n"
+                            ]
+                        },
+                        {
+                            "step": 3,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 - 5 = 5 (left: 10 5)\n"
+                            ],
+                            "new_ys": [
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n6 * 4 = 24 (left: )\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n10 - 5 = 5 (left: 6 5)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n10 + 5 = 15 (left: 6)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n6 + 4 = 10 (left: 10 5)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n6 - 4 = 2 (left: 2 5)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n4 + 6 = 10 (left: 10 5)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n4 - 6 = -2 (left: -2 5)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n4 * 6 = 24 (left: )\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 - 5 = 5 (left: 10 5)\n10 - 5 = 5 (left: 5)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 - 5 = 5 (left: 10 5)\n10 / 5 = 2 (left: 2)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 - 5 = 5 (left: 10 5)\n5 + 5 = 10 (left: 10)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 - 5 = 5 (left: 10 5)\n5 * 2 = 10 (left: 10)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 - 5 = 5 (left: 10 5)\n5 - 2 = 3 (left: 3)\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 - 5 = 5 (left: 10 5)\n5 / 2 = 2.5 (left: 2.5)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                60.0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n\n",
+                                "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n6 * 4 = 24 (left: )\n"
+                            ]
+                        }
+                    ],
+                    "summary": "Prioritize forming 24 by pairing 6 and 4 directly: 6 * 4 = 24. With remaining numbers 10 and 5, avoid incorrect operations like subtracting 5 from 10 without updating the set properly. Instead, after using 6 and 4, focus on combining 10 and 5 through valid operations such",
+                    "value_summary": "Prioritize moves that produce valid intermediate results close to 24 with remaining numbers manageable; avoid steps that reuse or misuse numbers, or result in impossible, invalid states."
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                ""
+                            ],
+                            "new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n",
+                                "10 / 5 = 2 (left: 6 2)\n",
+                                "6 * 4 = 24 (left: 10 5)\n",
+                                "10 + 5 = 15 (left: 6 15)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 6 5)\n"
+                            ],
+                            "new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n",
+                                "6 * 4 = 24 (left: 10 5)\n10 * 5 = 50 (left: 50)  \n",
+                                "6 * 4 = 24 (left: 10 5)\n10 / 5 = 2 (left: 2)\n",
+                                "10 - 5 = 5 (left: 6 5)\n6 * 4 = 24 (left: 5)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n"
+                            ]
+                        },
+                        {
+                            "step": 2,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n"
+                            ],
+                            "new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n10 - 5 = 5 (left: 10 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n10 / 5 = 2 (left: 2 4)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n5 * 4 = 20 (left: 5 20)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n20 + 4 = 24 (left: 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n24 + 0 = 24 (left: 5, assuming zero can be introduced if needed)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n10 - 5 = 5 (left: 10 5)\n"
+                            ]
+                        },
+                        {
+                            "step": 3,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n10 - 5 = 5 (left: 10 5)\n"
+                            ],
+                            "new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n6 * 4 = 24 (left: 10 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n10 + 5 = 15 (left: 6 4 15)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n10 - 5 = 5 (left: 6 4 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n6 + 4 = 10 (left: 10 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n6 - 4 = 2 (left: 2 10 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n6 / 2 = 3 (left: 3 4 10 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n4 + 10 = 14 (left: 14 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n4 - 10 = -6 (left: -6 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n4 * 10 = 40 (left: 40 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n4 / 10 = 0.4 (left: 0.4 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n10 - 5 = 5 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n10 - 5 = 5 (left: 10 5)\n10 + 5 = 15 (left: 15)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n10 - 5 = 5 (left: 10 5)\n10 * 5 = 50 (left: 50)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n10 - 5 = 5 (left: 10 5)\n10 / 5 = 2 (left: 2)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n10 - 5 = 5 (left: 10 5)\n5 + 5 = 10 (left: 10)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n10 - 5 = 5 (left: 10 5)\n5 - 5 = 0 (left: 0)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n10 - 5 = 5 (left: 10 5)\n5 * 5 = 25 (left: 25)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5)  \n10 - 5 = 5 (left: 10 5)\n5 / 5 = 1 (left: 1)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n6 * 4 = 24 (left: 10 5)\n",
+                                "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n10 + 5 = 15 (left: 6 4 15)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "Prioritize pairing 6 and 4 to quickly reach 24, as 6 * 4 = 24 is straightforward. After using these, focus on combining the remaining 10 and 5 through addition, subtraction, or multiplication\u2014such as 10 - 5 = 5, then combine with the earlier result if needed. Ensure each step follows",
+                    "value_summary": "Prioritize moves that produce intermediate results near 24 with remaining manageable numbers, avoiding reuse or invalid operations. Focus on valid, achievable steps that reduce complexity, aiming for intermediate targets close to"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                ""
+                            ],
+                            "new_ys": [
+                                "6 + 10 = 16 (left: 4 5 16)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n",
+                                "10 + 6 = 16 (left: 4 16)\n",
+                                "16 * 1 = 16 (left: 4 16)\n",
+                                "4 * 6 = 24 (left: 24)\n",
+                                "\n"
+                            ],
+                            "values": [
+                                0.003,
+                                60.0,
+                                0.003,
+                                0.003,
+                                60.0,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n",
+                                "4 * 6 = 24 (left: 24)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n",
+                                "4 * 6 = 24 (left: 24)\n"
+                            ],
+                            "new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n6 + 10 = 16 (left: 16 20)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n20 - 6 = 14 (left: 14 10)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n16 + 8 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 * 2.4 = 24 (left: 6 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n20 / (10 / 5) = 24 (left: 6 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n```\n",
+                                "4 * 6 = 24 (left: 24)\nAnswer: 4 * 6 = 24\n"
+                            ],
+                            "values": [
+                                0.003,
+                                60.0,
+                                60.0,
+                                60.0,
+                                60.0,
+                                60.0,
+                                20.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n20 - 6 = 14 (left: 14 10)\n"
+                            ]
+                        },
+                        {
+                            "step": 2,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n20 - 6 = 14 (left: 14 10)\n"
+                            ],
+                            "new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 - 6 = 0 (left: 30 0)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 / 5 = 6 (left: 6 5)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 * 4 = 24 (left: 4 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n4 + 20 = 24 (left: 20 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n20 / 5 = 4 (left: 4 4)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n4 * 6 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n20 - 6 = 14 (left: 14 10)\n14 - 10 = 4 (left: 14 4)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n20 - 6 = 14 (left: 14 10)\n14 / 7 = 2 (left: 2 10)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n20 - 6 = 14 (left: 14 10)\n10 - 4 = 6 (left: 14 6)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n20 - 6 = 14 (left: 14 10)\n14 / 7 = 2 (left: 2 10)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n20 - 6 = 14 (left: 14 10)\n10 - 2 = 8 (left: 8 14)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n20 - 6 = 14 (left: 14 10)\n14 - 8 = 6 (left: 10 6)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                60.0,
+                                60.0,
+                                0.003,
+                                60.0,
+                                1.002,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 * 4 = 24 (left: 4 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n4 + 20 = 24 (left: 20 24)\n"
+                            ]
+                        },
+                        {
+                            "step": 3,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 * 4 = 24 (left: 4 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n4 + 20 = 24 (left: 20 24)\n"
+                            ],
+                            "new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 * 4 = 24 (left: 4 24)\n4 * 6 = 24 (left: 6)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 * 4 = 24 (left: 4 24)\n6 * 4 = 24 (left: 4)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n4 + 20 = 24 (left: 20 24)\n20 - 4 = 16 (left: 16 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n4 + 20 = 24 (left: 20 24)\n24 / 3 = 8 (left: 8 20)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n4 + 20 = 24 (left: 20 24)\n20 / 5 = 4 (left: 4 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n4 + 20 = 24 (left: 20 24)\n8 * 3 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n4 + 20 = 24 (left: 20 24)\n4 * 6 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n4 + 20 = 24 (left: 20 24)\n6 * 4 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n4 + 20 = 24 (left: 20 24)\n```\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 * 4 = 24 (left: 4 24)\n4 * 6 = 24 (left: 6)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 * 4 = 24 (left: 4 24)\n6 * 4 = 24 (left: 4)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "Use each number exactly once without dropping or reusing them improperly. Focus on valid pairings such as (6 + 4 = 10), then combine remaining 10 and 5 with multiplication (10 * 5 = 50), and finally add 10 to reach",
+                    "value_summary": "Favor steps toward 24; avoid dead"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n"
+                            ],
+                            "new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 / 6 = 5 (left: 5)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 5)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 5 = 25 (left: 6)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 / 5 = 6 (left: 6)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 * 5 = 30 (left: 30)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 * 5 = 30 (left: 30)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                20.002,
+                                20.002,
+                                0.003,
+                                1.002,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 5)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 5 = 25 (left: 6)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 5)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 5 = 25 (left: 6)\n"
+                            ],
+                            "new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 5)\n5 * 4 = 20 (left: 20)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 5)\n10 + 14 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 5)\n10 * 2 = 20 (left: 20)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 5)\n6 + 4 = 10 (left: 10)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 5)\n10 + 14 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 5)\n6 * 4 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 5)\n10 * 2.4 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 5 = 25 (left: 6)\n6 * 4 = 24 (left: 5 10)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 5)\n5 * 4 = 20 (left: 20)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 5)\n10 + 14 = 24 (left: 24)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To solve 4, 5, 6, 10 in 24, prioritize pairing to create intermediate targets. Use (6 + 4 = 10) or (10 - 6 = 4) to generate 4 or 10, then combine remaining numbers via multiplication or addition to reach 24. Avoid using numbers outside the",
+                    "value_summary": "In the 24 game, prioritize moves that progress toward 24 or reduce options without dead ends. Valid steps use only remaining numbers, follow legal operations, and maintain logical consistency. Avoid moves that involve unavailable numbers or break the sequence, as they lead"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n"
+                            ],
+                            "new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 + 30 = 36 (left: 36)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 / 6 = 5 (left: 5)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 * 30 = 180 (left: 180)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                60.0,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 + 30 = 36 (left: 36)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 + 30 = 36 (left: 36)\n"
+                            ],
+                            "new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 24)\nAnswer: (5 * 4) + (10 - 6) = 24\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 + 30 = 36 (left: 36)\n36 - 12 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 + 30 = 36 (left: 36)\n36 / 3 = 12 (left: 12)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 + 30 = 36 (left: 36)\n12 * 2 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 + 30 = 36 (left: 36)\n36 / 6 = 6 (left: 6)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 + 30 = 36 (left: 36)\n6 * 4 = 24 (left: 24)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 + 30 = 36 (left: 36)\n6 + 18 = 24 (left: 18)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 + 30 = 36 (left: 36)\n18 - 6 = 12 (left: 12)\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 + 30 = 36 (left: 36)\n12 * 2 = 24 (left: 24)\n"
+                            ],
+                            "values": [
+                                60.0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n30 - 6 = 24 (left: 24)\nAnswer: (5 * 4) + (10 - 6) = 24\n",
+                                "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 + 30 = 36 (left: 36)\n36 - 12 = 24 (left: 24)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "Use only original numbers and valid operations to create intermediate targets, focusing on pairing to reach 10 or 4 (e.g., 6+4=10, 10-6=4). Combine these with remaining numbers via addition or multiplication to reach ",
+                    "value_summary": "In the 24 game with 4, 5, 6, 10, prioritize moves that directly combine remaining numbers to approach 24, ensuring all operations use only available values. Avoid steps that produce intermediate results not derivable from the original set, such as combining to form totals like 30 without valid operations. Valid moves should maintain logical consistency, preserve all remaining numbers, and avoid re"
+                }
+            ],
+            "env_info": [
+                {
+                    "action": "4 * 6 = 24 (left: 24 5)\n24 - 0 = 24 (left: 0)\n0 (no operations possible)\nPlease provide the four numbers you want to use for the game.\n",
+                    "history": [
+                        "5 * 4 = 20 (left: 6 10 20)",
+                        "10 + 20 = 30 (left: 6 30)",
+                        "Answer: (5 * 4) + (10 - 6) = 24"
+                    ]
+                },
+                {
+                    "action": "6 * 4 = 24 (left: 10 5)\n10 - 5 = 5 (left: 5 10)\n4 * 6 = 24 (left: 6 4)\n6 * 4 = 24 (left: )\n",
+                    "history": [
+                        "5 * 4 = 20 (left: 6 10 20)",
+                        "10 + 20 = 30 (left: 6 30)",
+                        "Answer: (5 * 4) + (10 - 6) = 24"
+                    ]
+                },
+                {
+                    "action": "10 - 5 = 5 (left: 6 5 5)\n(10 - 5) * 4 = 24 (left: 6)\n10 / 5 = 2 (left: 2 6 4)\n6 * 4 = 24 (left: 10 5)\n",
+                    "history": [
+                        "5 * 4 = 20 (left: 6 10 20)",
+                        "10 + 20 = 30 (left: 6 30)",
+                        "Answer: (5 * 4) + (10 - 6) = 24"
+                    ]
+                },
+                {
+                    "action": "6 * 4 = 24 (left: 10 24)\n10 / 5 = 2 (left: 2 6 4)\n10 / 5 = 2 (left: 2 6 4)\n\n",
+                    "history": [
+                        "5 * 4 = 20 (left: 6 10 20)",
+                        "10 + 20 = 30 (left: 6 30)",
+                        "Answer: (5 * 4) + (10 - 6) = 24"
+                    ]
+                },
+                {
+                    "action": "6 * 4 = 24 (left: 10 5)\n10 + 5 = 15 (left: 15)  \n15 (no operations possible, need at least two numbers)\n6 * 4 = 24 (left: 10 5)\n",
+                    "history": [
+                        "5 * 4 = 20 (left: 6 10 20)",
+                        "10 + 20 = 30 (left: 6 30)",
+                        "Answer: (5 * 4) + (10 - 6) = 24"
+                    ]
+                },
+                {
+                    "action": "5 * 4 = 20 (left: 6 10 20)\n10 + 20 = 30 (left: 6 30)\n6 * 4 = 24 (left: 4 24)\n4 * 6 = 24 (left: 6)\n",
+                    "history": [
+                        "5 * 4 = 20 (left: 6 10 20)",
+                        "10 + 20 = 30 (left: 6 30)",
+                        "Answer: (5 * 4) + (10 - 6) = 24"
+                    ]
+                },
+                {
+                    "action": "30 - 6 = 24 (left: 5)\n5 * 4 = 20 (left: 20)\n",
+                    "history": [
+                        "5 * 4 = 20 (left: 6 10 20)",
+                        "10 + 20 = 30 (left: 6 30)",
+                        "Answer: (5 * 4) + (10 - 6) = 24"
+                    ]
+                },
+                {
+                    "action": "30 - 6 = 24 (left: 24)\nAnswer: (5 * 4) + (10 - 6) = 24\n",
+                    "history": [
+                        "5 * 4 = 20 (left: 6 10 20)",
+                        "10 + 20 = 30 (left: 6 30)",
+                        "Answer: (5 * 4) + (10 - 6) = 24"
+                    ]
+                }
+            ],
+            "usage_so_far": {
+                "completion_tokens": 105931,
+                "prompt_tokens": 69539,
+                "cost": 3.5094000000000003
+            }
+        }
+    ],
+    "summary": {
+        "correct": 1,
+        "total_puzzles": 1,
+        "accuracy": 1.0,
+        "cost": {
+            "completion_tokens": 105931,
+            "prompt_tokens": 69539,
+            "cost": 3.5094000000000003
+        }
+    }
+}

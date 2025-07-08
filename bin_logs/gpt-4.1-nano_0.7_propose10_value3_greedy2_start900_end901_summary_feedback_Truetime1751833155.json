@@ -1,0 +1,1820 @@
+{
+    "logs": [
+        {
+            "idx": 900,
+            "agent_info": [
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                ""
+                            ],
+                            "new_ys": [
+                                "4 + 6 = 10 (left: 10 5 10)\n",
+                                "4 * 6 = 24 (left: 24 5)\n",
+                                "5 + 19 = 24 (left: 24)\n",
+                                "4 + 5 + 6 + 10 is not directly applicable in one step, but combining pairs:\n",
+                                "4 * 6 = 24 (left: 24 5)\n",
+                                "24 / 1 = 24 (left: 24)\n",
+                                "or\n",
+                                "(10 - 4) * 2.4 = 24, but since only basic operations are allowed, focus on straightforward steps:\n",
+                                "4 * 6 = 24 (done)\n",
+                                "or\n"
+                            ],
+                            "values": [
+                                0.003,
+                                40.001,
+                                60.0,
+                                0.002,
+                                60.0,
+                                60.0,
+                                0.003,
+                                0.0,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "5 + 19 = 24 (left: 24)\n",
+                                "4 * 6 = 24 (left: 24 5)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "5 + 19 = 24 (left: 24)\n",
+                                "4 * 6 = 24 (left: 24 5)\n"
+                            ],
+                            "new_ys": [
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n",
+                                "4 * 6 = 24 (left: 24 5)\n24 - 5 = 19 (left: 19)\n"
+                            ],
+                            "values": [
+                                0.002,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "4 * 6 = 24 (left: 24 5)\n24 - 5 = 19 (left: 19)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n"
+                            ]
+                        },
+                        {
+                            "step": 2,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "4 * 6 = 24 (left: 24 5)\n24 - 5 = 19 (left: 19)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n"
+                            ],
+                            "new_ys": [
+                                "4 * 6 = 24 (left: 24 5)\n24 - 5 = 19 (left: 19)\n19 (no further operations possible to reach 24 with a single number)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n5 + 19 = 24 (left: 19)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n20 - 4 = 16 (left: 4, 20)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n12 + 12 = 24 (left: 12)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n6 * 4 = 24 (left: 4)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n8 + 16 = 24 (left: 16)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n24 / 1 = 24 (left: 1)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n6 + 18 = 24 (left: 18)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n3 * 8 = 24 (left: 8)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n48 / 2 = 24 (left: 2)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n30 - 6 = 24 (left: 6)\n"
+                            ],
+                            "values": [
+                                0.001,
+                                0.003,
+                                60.0,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n20 - 4 = 16 (left: 4, 20)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n5 + 19 = 24 (left: 19)\n"
+                            ]
+                        },
+                        {
+                            "step": 3,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n20 - 4 = 16 (left: 4, 20)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n5 + 19 = 24 (left: 19)\n"
+                            ],
+                            "new_ys": [
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n20 - 4 = 16 (left: 4, 20)\n20 / 4 = 5 (left: 5)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n20 - 4 = 16 (left: 4, 20)\n20 - 4 = 16 (left: 16)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n20 - 4 = 16 (left: 4, 20)\n4 * 5 = 20 (left: 20)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n20 - 4 = 16 (left: 4, 20)\n4 + 20 = 24 (left: 24)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n5 + 19 = 24 (left: 19)\n19 (no operations possible to reach 24 with a single number)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                21.001,
+                                0.002
+                            ],
+                            "select_new_ys": [
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n20 - 4 = 16 (left: 4, 20)\n4 + 20 = 24 (left: 24)\n",
+                                "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n20 - 4 = 16 (left: 4, 20)\n20 / 4 = 5 (left: 5)\n"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                ""
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n",
+                                "10 / 5 = 2 (left: 2 6 4)\n",
+                                "6 / 2 = 3 (left: 3 4)\n",
+                                "4 * 6 = 24 (left: 24)\n"
+                            ],
+                            "values": [
+                                40.001,
+                                21.001,
+                                0.003,
+                                60.0
+                            ],
+                            "select_new_ys": [
+                                "4 * 6 = 24 (left: 24)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "4 * 6 = 24 (left: 24)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n"
+                            ],
+                            "new_ys": [
+                                "4 * 6 = 24 (left: 24)\nAnswer: 4 * 6 = 24\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n6 * 4 = 24 (left: 24)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 + 4 = 9 (left: 9 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 5 = 5 (left: 4 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n6 + 4 = 10 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n6 / 4 = 1.5 (left: 1.5 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 20 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n20 + 4 = 24 (left: 24)\n"
+                            ],
+                            "values": [
+                                0.001,
+                                60.0,
+                                60.0,
+                                0.003,
+                                20.002,
+                                0.003,
+                                0.003,
+                                0.003,
+                                60.0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n6 * 4 = 24 (left: 24)\n"
+                            ]
+                        },
+                        {
+                            "step": 2,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n6 * 4 = 24 (left: 24)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n6 - 4 = 2 (left: 2 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n6 / 3 = 2 (left: 2 4 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n10 - 6 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n10 / 5 = 2 (left: 2 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n4 + 4 = 8 (left: 8 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n4 * 6 = 24 (left: 24)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n6 * 4 = 24 (left: 24)\nAnswer: 6 * (10 - 6) = 24\n"
+                            ],
+                            "values": [
+                                0.003,
+                                40.001,
+                                0.003,
+                                60.0,
+                                0.003,
+                                60.0,
+                                20.001
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n10 / 5 = 2 (left: 2 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n4 * 6 = 24 (left: 24)\n"
+                            ]
+                        },
+                        {
+                            "step": 3,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n10 / 5 = 2 (left: 2 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n4 * 6 = 24 (left: 24)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n10 / 5 = 2 (left: 2 4 6)\n10 - 6 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n10 / 5 = 2 (left: 2 4 6)\n10 / 5 = 2 (left: 2 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n10 / 5 = 2 (left: 2 4 6)\n6 / 2 = 3 (left: 4 3)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n10 / 5 = 2 (left: 2 4 6)\n5 + 4 = 9 (left: 6 9)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n10 / 5 = 2 (left: 2 4 6)\n6 * 4 = 24 (left: 24)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n4 * 6 = 24 (left: 24)\nAnswer: (10 - 6) * (10 - 4) = 24\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0.002
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n4 * 6 = 24 (left: 24)\nAnswer: (10 - 6) * (10 - 4) = 24\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n10 / 5 = 2 (left: 2 4 6)\n10 - 6 = 4 (left: 4 4)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "Use only the original numbers 4, 5, 6, 10 with basic operations (+, \u2013, \u00d7, \u00f7). Avoid creating or assuming new numbers like 19. Focus on pairing numbers to reach 24 through valid combinations, such as (6 \u00f7 10",
+                    "value_summary": "Moves leading directly to 24 are promising; others generally lead to dead"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                ""
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n",
+                                "6 / 6 = 1 (left: 4 5 1)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n",
+                                "5 + 5 = 10 (left: 4 10)\n",
+                                "4 * 6 = 24 (left: 24)\n",
+                                "4 * 5 = 20 (left: 20 6)\n",
+                                "6 + 10 = 16 (left: 4 16)\n",
+                                "10 / 5 = 2 (left: 4 2)\n",
+                                "4 + 10 = 14 (left: 14 6)\n",
+                                "4 + 6 = 10 (left: 10 10)\n"
+                            ],
+                            "values": [
+                                60.0,
+                                40.001,
+                                60.0,
+                                0.003,
+                                60.0,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n4 + 4 = 8 (left: 5 8)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 + 4 = 9 (left: 4 8)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 + 4 = 14 (left: 5 14)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n10 + 4 = 14 (left: 5 14)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n6 + 4 = 10 (left: 5 10)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n10 - 4 = 6 (left: 4 5 6)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n6 * 4 = 24 (left: 5 24)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n5 * 4 = 20 (left: 20 6)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n6 + 4 = 10 (left: 5 10)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n5 * 6 = 30 (left: 4 30)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                20.002,
+                                60.0,
+                                0.003,
+                                20.002,
+                                0.003,
+                                60.0,
+                                40.001,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n10 - 4 = 6 (left: 4 5 6)\n"
+                            ]
+                        },
+                        {
+                            "step": 2,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n10 - 4 = 6 (left: 4 5 6)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n5 * 4 + 10 = 30 (not directly leading to 24, discard)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 6 = 16 (not 24, discard)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 * 2.4 = 24 (but 2.4 is not original, discard)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 6 = 24 (left: 10 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n5 * 4 + 4 = 24 (but 4 repeated, discard)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n10 - 4 = 6 (left: 4 5 6)\n4 + 6 = 10 (left: 10 5)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n10 - 4 = 6 (left: 4 5 6)\n4 * 6 = 24 (left: 5)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n10 - 4 = 6 (left: 4 5 6)\n5 * 4 + 6 = 26 (left: 26)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n10 - 4 = 6 (left: 4 5 6)\n5 * 4 = 20 (left: 20 6)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n10 - 4 = 6 (left: 4 5 6)\n20 + 4 = 24 (left: 6)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n10 - 4 = 6 (left: 4 5 6)\n10 + 14 = 24 (left: 5 10) *(Note: 14 not in initial set, ignore)*\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n10 - 4 = 6 (left: 4 5 6)\n10 + 6 = 16 (left: 16 5)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n10 - 4 = 6 (left: 4 5 6)\n6 * 4 = 24 (left: 5)\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n10 - 4 = 6 (left: 4 5 6)\n5 * 4 + 4 = 24 *(Note: Reusing 4, invalid; ignore)*\n",
+                                "10 - 5 = 5 (left: 4 5 4)\n10 - 4 = 6 (left: 4 5 6)\n6 * 4 = 24 (left: 5)\n"
+                            ],
+                            "values": [
+                                60.0,
+                                0.003,
+                                0.002,
+                                0.002,
+                                0.003,
+                                0.002,
+                                0.003,
+                                0.001,
+                                60.0,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                20.002,
+                                0.001,
+                                20.002
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n"
+                            ]
+                        },
+                        {
+                            "step": 3,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n10 - 6 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n10 / 5 = 2 (left: 2 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n6 * 4 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n5 + 10 = 15 (left: 6 15)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n6 * 4 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n5 * 4 = 20 (left: 6 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n6 + 10 = 16 (left: 4 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n4 * 6 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n4 + 6 = 10 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n6 / 2 = 3 (left: 3 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n10 - 6 = 4 (left: 4 4)  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n10 / 5 = 2 (left: 2 6)  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n6 / 3 = 2 (left: 4 2)  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n6 * 4 = 24 (left: 24)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n10 - 6 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n10 / 5 = 2 (left: 2 6)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "Combine the original numbers 4, 5, 6, 10 using only +, \u2013, \u00d7, \u00f7 without reusing intermediate results or creating new numbers. Focus on pairing numbers to reach 24 in a single step or through logical sequences. Avoid invalid operations like subtracting or dividing resulting in non-original numbers. For ",
+                    "value_summary": "Promising moves quickly reach 24; dead ends emerge from"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 5 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 5 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 / 2 = 3 (left: 3 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n5 * 4 = 20 (left: 20 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 5 6 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 6 = 14 (left: 4 14)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n"
+                            ],
+                            "values": [
+                                20.002,
+                                0.003,
+                                21.001,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                21.001
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 - 6 = 4 (left: 4 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 - 6 = 4 (left: 4 5 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n5 * 4 = 20 (left: 20 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n20 + 4 = 24 (left: 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 - 6 = 4 (left: 4 5 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n5 * 4 = 20 (left: 20 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n20 + 4 = 24 (left: 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n6 * 4 = 24 (left: 10 5 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 - 5 = 5 (left: 5 6 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n6 + 4 = 10 (left: 10 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 - 6 = 4 (left: 4 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 - 4 = 6 (left: 6 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n6 * 4 = 24 (left: 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n5 * 4 = 20 (left: 5 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n20 + 4 = 24 (left: 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 / 2 = 5 (left: 5 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n6 + 10 = 16 (left: 16 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 - 5 = 5 (left: 6 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n6 * 4 = 24 (left: 2 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n5 * 4 = 20 (left: 2 20)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 - 6 = 4 (left: 4 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 - 6 = 4 (left: 4 5 2)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To solve 4, 5, 6, 10 for 24, focus on pairing numbers to create intermediate results that simplify toward 24. Start by identifying operations that produce manageable numbers, such as subtracting to generate 4 or 6, or multiplying to reach 20. For example, subtract 6 from 10 to get 4, which pairs well with 5. Multiplying 5 by 4 yields 20, bringing you close to 24. Then, consider adding or subtracting 4 and 6 to reach 24 directly or via intermediate",
+                    "value_summary": "Promising moves quickly approach 24; moves producing impossible intermediate values (like 20) are"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 + 10 = 16 (left: 4 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 / 2 = 3 (left: 3 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 / 5 = 2 (left: 2 6 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n6 * 4 = 24 (left: 10 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n6 + 10 = 16 (left: 16 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 - 6 = 4 (left: 4 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n6 * 4 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 + 14 = 24 (left: 14 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n6 * 4 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 + 14 = 24 (left: 14 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n6 * 4 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 + 14 = 24 (left: 14 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n10 / 5 = 2 (left: 2 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n10 - 6 = 4 (left: 4 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n10 - 5 = 5 (left: 4 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n6 / 2 = 3 (left: 3 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n6 - 2 = 4 (left: 4 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n5 + 5 = 10 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n6 - 5 = 1 (left: 1 10)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n10 / 5 = 2 (left: 2 6 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 6 10)\n6 * 4 = 24 (left: 10 4)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To efficiently solve the 24 puzzle with the numbers 4, 5, 6, and 10, focus on strategic pairings that simplify toward 24, emphasizing valid intermediate steps. From past attempts, a key insight is to utilize division early to generate manageable numbers, but always verify the legality of each operation\u2014each number can only be used once per step, and intermediate results must be derived directly from the original set or previous valid results.\n\nA promising approach is to examine the division of larger numbers by smaller ones to produce neat fractions that can be combined to reach 24. For example, dividing 10 by 5 yields 2, which is a manageable number for further operations. After this step, remaining numbers are 2, 6, and 10, but subsequent operations must be carefully chosen\u2014adding, subtracting, or multiplying\u2014to approach 24.\n\nFrom the previous analysis, combining 6 and 10 through addition yields 16, which is close but requires further adjustment. Multiplying 5 by 4 (if feasible) to reach 20 is another route, but since 4 is not directly involved after the initial division, it may be better to focus on the current set. For example, from 2 and 6, multiplying to get 12, then adding 10 yields 22, still close but not exact. Alternatively, dividing 6 by 2 gives 3, which can be combined with other numbers to reach 24.\n\nOverall, the key is to generate intermediate targets like 12, 16, or 20 and combine them with remaining numbers to reach 24. Valid steps include dividing",
+                    "value_summary": "In evaluating moves for 4, 5, 6, 10, prioritize operations that rapidly approach 24 without creating impossible intermediate values. Promising moves are those that systematically combine numbers to inch closer to 24 while maintaining legal, feasible steps. For instance, dividing 10 by 5 to get 2 simplifies the problem effectively; such moves reduce complexity and keep intermediate results within reachable bounds. Conversely, steps that produce values like 20 or involve reusing or dropping numbers illegally are unpromising, as they violate game rules and hinder progress. Moves resulting in invalid states\u2014such as attempting to use a number not present or misusing the remaining set\u2014should be avoided"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 / 2 = 3 (left: 4 3)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 6 = 24 (left: 24)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 + 6 = 10 (left: 10 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 6 = 24 (left: 24)\n"
+                            ],
+                            "values": [
+                                60.0,
+                                0.003,
+                                60.0,
+                                0.003,
+                                0.003,
+                                60.0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 6 = 24 (left: 24)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 6 = 24 (left: 24)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2 6)\n10 / 5 = 2 (left: 2 6 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2 6)\n6 / 2 = 3 (left: 3 4 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2 6)\n6 - 4 = 2 (left: 2 2 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2 6)\n4 + 4 = 8 (left: 8 6 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2 6)\n6 + 2 = 8 (left: 8 4 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2 6)\n4 * 2 = 8 (left: 8 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 6 = 24 (left: 24)\nAnswer: 4 * 6 = 24\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 6 = 24 (left: 24)\nAnswer: 4 * 6 = 24\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2 6)\n10 / 5 = 2 (left: 2 6 4)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "For solving the 24 puzzle with the numbers 4, 5, 6, and 10, the key is to identify operations that efficiently reduce the set to intermediate targets closer to 24, while respecting the rules: each number can only be used once per operation, and all operations must be valid.\n\nA crucial strategy is to utilize division early to create manageable fractions. For instance, dividing 10 by 5 yields 2, a simple number that can be combined more easily with remaining values. This step reduces the problem to the numbers 2, 6, and 4, enabling straightforward combinations. Avoid reusing or dropping numbers illegally; each step must derive directly from current or previously used numbers.\n\nNext, consider combining 6 and 2 through multiplication to get 12, which is a key intermediate (since 12 \u00d7 2 = 24). Alternatively, dividing 6 by 2 yields 3, which can then be added to 4 to approach 24 indirectly. For example, if you find a way to get 8 (by adding 4 and 4, or other means), then multiplying or adding appropriately might reach 24.\n\nPrioritize forming intermediate targets like 12, 16, or 20, then",
+                    "value_summary": "In the 4, 5, 6, 10 puzzle, effective moves quickly reduce complexity and progress toward 24 without invalid states. Dividing 10 by 5 to get 2 simplifies the problem, while combining remaining numbers should aim to approach 24 systematically. Moves resulting in impossible or unreachable intermediate values\u2014like leaving 2, 6, 10 or producing"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n4 * 6 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n4 * 6 = 24 (left: 10)\n"
+                            ],
+                            "values": [
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n4 * 6 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n4 * 6 = 24 (left: 10)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To solve the 24 puzzle with 4, 5, 6, and 10, leverage early division to create manageable intermediate numbers. For instance, dividing 10 by 5 yields 2, simplifying subsequent operations. From the remaining numbers, combining 6 and 2 via multiplication produces 12, a key target. Recognizing that 4 multiplied by 6 equals 24 directly solves the puzzle, as seen in the recent successful step. When possible, prioritize operations that directly produce 12, 16, or 24, such as 4\u00d76=24, which immediately achieves the goal. Avoid unnecessary reuse of numbers; each step must derive from current values. After an operation yields 24, the puzzle is solved. If that route isn\u2019t available, consider dividing larger numbers to produce smaller factors, then combine",
+                    "value_summary": "In the 4, 5, 6, 10 puzzle, effective moves prioritize reducing complexity while progressing toward 24 with valid intermediate states. Using operations like dividing 10 by 5 to obtain 2 or multiplying 4 and 6 to reach 24 are promising, as they directly simplify the problem. Moves that involve invalid reuse of numbers or produce unreachable intermediate results\u2014such as attempting to combine leftover numbers without clear pathways\u2014"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 10 = 20 (left: 4 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n12 * 2 = 24 (left: 12 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 6 = 24 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n8 * 3 = 24 (left: 8 3)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\nNote: Since the input is only \"4 20\" and no other numbers are given, these steps assume intermediate operations from previous steps or possible combinations.\n"
+                            ],
+                            "values": [
+                                0.003,
+                                60.0,
+                                60.0,
+                                60.0,
+                                60.0,
+                                60.0,
+                                60.0,
+                                0.001
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 10 = 20 (left: 4 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 10 = 20 (left: 4 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 10 = 20 (left: 4 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n6 * 4 = 24 (left: )\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n10 / 5 = 2 (left: 2 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n10 - 6 = 4 (left: 4 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n5 * 4 = 20 (left: 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n20 + 4 = 24 (left: )\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n6 + 6 = 12 (left: 4 12)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n12 * 2 = 24 (left: )\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n10 + 14 = 24 (left: 14)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n30 - 6 = 24 (left: 5 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n15 + 9 = 24 (left: 9 5)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 10 = 20 (left: 4 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6 4)\n6 * 4 = 24 (left: )\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To efficiently solve the 24 puzzle with 4, 5, 6, and 10, focus on creating intermediate targets like 12, 24, or 30 through strategic operations. Avoid assuming any number not present initially; all steps must derive directly from the given numbers. First, consider dividing larger numbers to produce manageable factors\u2014for example, dividing 10 by 5 yields 2, simplifying subsequent calculations. Use this to create key intermediate numbers; for instance, 4 \u00d7 6 = 24 directly solves the puzzle. Alternatively, combining 10 and 5 to get 50, then dividing by 5, yields 10, which can be reused or combined with other numbers. Prioritize operations that lead to 12 or 24, as these are often easier to manipulate into ",
+                    "value_summary": "In evaluating moves within the 24 game for the numbers 4, 5, 6, and 10, a refined assessment emphasizes two core principles: validity of the operation and strategic simplification toward reaching 24. Effective moves are those that produce valid intermediate results while actively reducing the problem's complexity. Moves that combine two numbers using permissible operations\u2014addition, subtraction, multiplication, or division\u2014must adhere strictly to game rules: each operation uses exactly two current numbers, and the resulting value replaces those two, decreasing the total count of numbers by one.\n\nFrom the previous summaries, we observe that moves prioritizing straightforward, high-impact operations are more promising. For example, multiplying 4 and 6 to reach 24 directly is an optimal move because it achieves the target in a single step. Similarly, dividing 10 by 5 to produce 2 simplifies the problem and opens pathways to combine remaining numbers into 24. Conversely, moves involving unnecessary or invalid reuse of numbers\u2014such as attempting to generate a new number outside the current list without proper operation\u2014are unpromising and often invalid.\n\nThe recent learning highlights the importance of step legality: each step must be performed by selecting two numbers from the current list, performing a legal operation, and replacing these two with the result. Any attempt to use a number or value not present in the current list violates rules and renders the move invalid. For instance, creating a '20' from 4 and 5 (via multiplication) is valid, but subsequent steps that rely on reusing old numbers improperly or reusing results without re-deriving them can lead to illegal moves. Additionally, moves that do not progress toward 24\u2014such as operations that produce"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 4 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 4 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 5 = 5 (left: 4 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 2 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 6)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 4 16)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 4 16)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n4 * 6 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 4 16)\n4 * 6 = 24 (left: 10)\n"
+                            ],
+                            "values": [
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n4 * 6 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 4 16)\n4 * 6 = 24 (left: 10)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To solve the 24 puzzle with 4, 5, 6, and 10, focus on creating key intermediate targets such as 12, 24, or 30 through valid operations. Avoid reusing numbers beyond their initial count; each operation must draw directly from the original set. Use division to simplify larger numbers\u2014dividing 10 by 5 yields 2, which can facilitate reaching 24 (e.g., 4 \u00d7 6 = 24). Combining 4 and 6 directly produces 24, solving the puzzle efficiently. Do not attempt to double a number like 10 + 10, as only one 10 is available; such steps are invalid. Instead, explore combinations like (10 - 5)",
+                    "value_summary": "In evaluating moves within the 24 game for the numbers 4, 5, 6, and 10, the core principles remain: each move must be valid, use only the current numbers once, and strategically progress toward 24. Moves involving the combination of two numbers via addition, subtraction, multiplication, or division are promising if they simplify the problem or directly lead to the solution. For example, multiplying 4 and 6 to get 24 is highly effective and immediately solves the puzzle in one step. Dividing 10 by 5 to produce 2 reduces complexity, creating a new pathway toward 24 when combined with other numbers.\n\nCrucially, move validity hinges on strict adherence to rules: only numbers currently available can be used, each exactly once per operation, and results must be legitimate operations (no reusing numbers or results improperly). Attempting to combine a number with itself or reusing a number without proper operation is invalid. For example, trying to add 10 + 10 is invalid because only one 10 exists initially"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 * 2 = 20 (left: 4 5 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 6 = 24 (left: 10 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Alternatively, if starting from 4, 5, 6, 10, the direct steps include:)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 6 = 24 (left: 10 5)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                60.0,
+                                0.003,
+                                0.003,
+                                20.0,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Alternatively, if starting from 4, 5, 6, 10, the direct steps include:)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Alternatively, if starting from 4, 5, 6, 10, the direct steps include:)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n4 * 6 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n10 / 10 = 1 (left: 4 6 1)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n4 + 6 = 10 (left: 10 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n4 * 10 / 10 = 4 (left: 6 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n6 * 4 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n6 + 10 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n10 - 4 = 6 (left: 6 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n6 / 6 = 1 (left: 4 1)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n4 + 1 = 5 (left: 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n4 - 1 = 3 (left: 3)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Alternatively, if starting from 4, 5, 6, 10, the direct steps include:)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Alternatively, if starting from 4, 5, 6, 10, the direct steps include:)\n10 + 14 = 24 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Alternatively, if starting from 4, 5, 6, 10, the direct steps include:)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Alternatively, if starting from 4, 5, 6, 10, the direct steps include:)\n4 * 6 = 24 (left: 10 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Alternatively, if starting from 4, 5, 6, 10, the direct steps include:)\n10 + 14 = 24 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Alternatively, if starting from 4, 5, 6, 10, the direct steps include:)\n14 + 10 = 24 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Alternatively, if starting from 4, 5, 6, 10, the direct steps include:)\n10 * 2.4 = 24 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Alternatively, if starting from 4, 5, 6, 10, the direct steps include:)\n4 * 6 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Alternatively, if starting from 4, 5, 6, 10, the direct steps include:)\n10 + 14 = 24 (left: 4 6)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n4 * 6 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6 10)\n10 / 10 = 1 (left: 4 6 1)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To efficiently solve the 24 puzzle with 4, 5, 6, and 10, focus on direct combinations that reach 24 or key intermediates like 12 or 30. Recognize that 4 \u00d7 6 = 24 provides an immediate solution, so prioritize multiplicative pairing of 4 and 6. Avoid invalid operations such as reusing numbers beyond their initial count or creating values like 20 from non-existent sums. Use division strategically: dividing 10 by 5 yields 2, which can help reach 24 via 4 \u00d7 6 or combine with other results. Since only one of each number is available, do not attempt to double or reuse numbers. For example, avoid steps like 20 / 5 = 4, which involve non-available intermediate sums",
+                    "value_summary": "In evaluating moves within the Game of 24 for the numbers 4, 5, 6, and 10, it is essential to develop a clear, rule-based framework that guides the identification of promising versus unpromising steps. The core principles hinge on legality, strategic progress, and the impact of each move on simplifying the problem toward reaching 24.\n\n**Legal move criteria** are paramount. Each operation must utilize only the current set of available numbers, with each number used exactly once per move. Intermediate results\u2014like 20 or 24\u2014are considered new numbers only if the rules explicitly permit creating and carrying forward such results. Importantly, reusing the same number within a move (e.g., adding 5 + 5) is invalid unless multiple instances are present initially. Dropping numbers intentionally or creating results that do not adhere to the original constraints breaches the rules.\n\n**Strategic evaluation** involves recognizing moves that directly solve or substantially simplify the problem. For example, multiplying 4 and 6 to get 24 is an immediate solution, making it highly promising. Conversely, dividing 10 by 5 to produce 2 reduces complexity and opens alternative pathways, which can be promising if it leads closer to 24 in subsequent steps.\n\n**Progression and simplification** are critical. Moves that reduce the number of remaining options or produce intermediary results closer to 24 are more promising. For instance, dividing 20 (from 4 and 5) by 5 to get 4, or combining small results to approach 24, are strategies aligned with effective problem-solving.\n\n**Invalid moves** are those that violate the rules\u2014such as attempting to use a number not in the current set, reusing a number improperly, or creating intermediate results that cannot"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 6 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2)\n4 * 6 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2)\n10 / 5 = 2 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2)\n6 * 4 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2)\n10 - 5 = 5 (left: 4 6 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2)\n6 * 4 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2)\n10 / 5 = 2 (left: 4 6 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n10 / 5 = 2 (left: 2 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n6 / 5 = 2 (left: 4 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n4 * 6 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 * 4 = 24 (left: 10)\n4 * 6 = 24 (left: 10)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2)\n4 * 6 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 / 5 = 2 (left: 4 2)\n10 / 5 = 2 (left: 4 6)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To effectively solve the 24 puzzle with 4, 5, 6, and 10, focus on direct multiplicative combinations like 4 \u00d7 6 = 24, which provides an immediate solution. Avoid using numbers outside the initial set or creating invalid intermediate values; each number can only be used once. Recognize that dividing 10 by 5 yields 2, which can be combined with 4 and 6 to reach 24 (e.g., 2 \u00d7 12, with 12 from 6 \u00d7 2). Prioritize operations that produce intermediate results close to 24 or 12, enabling straightforward multiplications. Do not attempt to",
+                    "value_summary": "In evaluating moves within the Game of 24 for the numbers 4, 5, 6, and 10, the core principles revolve around legality, strategic progress, and simplification toward 24. Legality dictates that each move must utilize only the current set of available numbers, with each used exactly once, and produce intermediate results that adhere to the rules. Creating new numbers not derivable directly from the initial set\u2014such as 14 from 10 + 4\u2014is invalid unless explicitly permitted. Reusing numbers improperly or dropping numbers without proper operation violates constraints. Strategically, moves that directly produce 24 (e.g., 4 \u00d7 6 = 24) are immediately promising. Moves that reduce the number of remaining options or produce intermediary results closer to 24 are also valuable, particularly if they enable subsequent successful operations. For example, dividing 10 by 5 to get 2 opens pathways to reach 24 through multiplication (e.g., 4 \u00d7 6 = 24). Conversely, moves that attempt to combine non-existent intermediate results or incorporate invalid operations are unpromising. Progression should aim for simplification by"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 4 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 4 = 5 (left: 5 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 5 = 15 (left: 15 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 * 1 = 20 (left: 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 6 = 24 (left: 6)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                60.0,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 * 1 = 20 (left: 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 * 1 = 20 (left: 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 * 1 = 20 (left: 4 20)\n20 / 4 = 5 (left: 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 * 1 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 * 1 = 20 (left: 4 20)\n20 + 4 = 24 (left: 24)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 * 1 = 20 (left: 4 20)\n4 * 5 = 20 (left: 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n10 + 4 = 14 (left: 5 14)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n5 * 4 = 20 (left: 10 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n6 * 4 = 24 (left: 10 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n5 * 4 = 20 (left: 6 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n10 - 5 = 5 (left: 6 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n10 / 5 = 2 (left: 4 2)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 * 1 = 20 (left: 4 20)\n20 / 4 = 5 (left: 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 * 1 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "For the 4, 5, 6, 10 puzzle, leverage simple division and multiplication to generate key intermediates. Starting with 10 \u00f7 5 = 2 is a safe, legal move that results in a new value of 2 alongside remaining 4 and 6. Focus on combining these to reach 24 efficiently: since 6 \u00d7 4 = 24, use the remaining numbers after creating 2 to facilitate this. For example, after obtaining 2 from 10 \u00f7 5, multiply 2 by 12 (which is 6 \u00d7 2), but note that creating 12",
+                    "value_summary": "In evaluating moves within the Game of 24 for the numbers 4, 5, 6, and 10, the core principles hinge on legality, strategic progression, and correct utilization of remaining numbers. A move is **legal** if it employs only the current set of available numbers exactly once, applies valid operations (+, \u2212, \u00d7, \u00f7), and produces an intermediate result consistent with the game's rules\u2014specifically, no creating new numbers outside permitted operations or reusing numbers improperly. Moves that directly produce 24, such as 4 \u00d7 6, are immediately promising, as they solve the puzzle outright. Reducing the number of remaining options while maintaining valid operations is also advantageous, as it simplifies the path toward 24. For example, dividing 10 by 5 to get 2 opens new avenues via multiplication. Conversely, moves that involve combining non-existent intermediate results or drop numbers without proper operation are unpromising and invalid. Each step should preserve the integrity of the remaining set; dropping numbers or reusing results improperly invalidates the move. Progression toward 24 benefits from clear, legal operations that reduce complexity and keep options open. In particular, verifying that each subsequent step uses"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 4 = 5 (left: 5 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 5 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 5 = 15 (left: 4 15)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n5 + 4 = 9 (left: 9 20)\n"
+                            ],
+                            "values": [
+                                60.0,
+                                0.003,
+                                0.003,
+                                0.003,
+                                20.002,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 20)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n20 - 4 = 16 (left: 5 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n16 + 8 = 24 (left: 8)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n16 + 8 = 24 (left: 8)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n20 - 4 = 16 (left: 5 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 20)\n10 / 5 = 2 (left: 2 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 20)\n6 * 4 = 24 (left: 10 24)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 20)\n20 / 10 = 2 (left: 2 6 24)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 20)\n6 * 4 = 24 (left: 10 24)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 20)\n10 + 4 = 14 (left: 6 14 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 20)\n6 * 4 = 24 (left: 10 24)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 20)\n6 * 4 = 24 (left: 10 24)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n20 - 4 = 16 (left: 5 16)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "For the puzzle involving the numbers 4, 5, 6, and 10, effective strategies hinge on identifying valid operations that progress toward the target number 24, while respecting the rules of combining only remaining numbers at each step without reuse or invalid operations. \n\nKey actionable insights are:\n\n1. Leverage straightforward multiplication of pairs that produce intermediate numbers close to or useful for 24. For example, combining 4 and 5 yields 20, which is a strong candidate because it is close to 24 and can be manipulated further.\n\n2. Use the results of initial multiplications to generate larger numbers that can facilitate reaching 24 indirectly. For instance, multiplying 20 by 6 yields 120, which, although larger than 24, can sometimes be useful for division or subtraction in more complex puzzles. However, in this specific case, such steps lead away from 24, indicating the importance of selective operations.\n\n3. Recognize when certain combinations cannot lead to 24. For these, avoid exhaustive attempts that involve complex operations unlikely to produce 24 given the initial set. For example, attempts to derive 24 directly from 4, 5, 6, 10 through addition or subtraction often fail unless specific combinations (like 6 / (10 - 5) * 4) are considered, but these may involve fractional or invalid intermediate steps.\n\n4. Be aware that some target numbers are impossible to reach with the given set and allowed operations. In this case, the sequence of valid steps shows that creating 24 from 4, 5, 6, and ",
+                    "value_summary": "In evaluating moves within the 24 game for the numbers 4, 5, 6, and 10, the key principles are legality, logical progression, and proper use of remaining numbers. A move is *legal* if it employs only the current set of available numbers exactly once, applies valid operations (+, \u2212, \u00d7, \u00f7), and results in an intermediate value consistent with game rules\u2014no introducing extraneous numbers or reusing results improperly. Moves that directly produce 24, like 4 \u00d7 6, are immediately promising. Reducing the number of remaining options while preserving valid operations simplifies the path toward 24. Importantly, each step must accurately update the remaining set: combining two numbers produces a new number replacing those used, and no outside values (e.g., 1 not present initially) should be introduced unless derived legitimately. Moves that involve combining non-existent intermediate results or reusing numbers improperly are invalid and unpromising. In particular, attempting operations that rely on values"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n16 + 8 = 24 (left: 8)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n16 + 8 = 24 (left: 8)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n16 + 8 = 24 (left: 8)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n20 + 4 = 24 (left: 10 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n20 + 6 = 26 (left: 4 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n10 * 2.4 = 24 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n(Invalid: using non-integer intermediate results is typically not allowed; assuming only integers)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n16 * 1.5 = 24 (left: 10 6) (Invalid: non-integer)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \nAlternatively, focusing on integers:\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n16 + 8 = 24 (left: 8)\n10 - 6 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n16 + 8 = 24 (left: 8)\n6 + 10 = 16 (left: 4 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n16 + 8 = 24 (left: 8)\n16 - 10 = 6 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n16 + 8 = 24 (left: 8)\n6 * 4 = 24 (left: 24)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0.003,
+                                0,
+                                0.003,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n  \n"
+                            ]
+                        }
+                    ],
+                    "summary": "For solving the 24 puzzle with the numbers 4, 5, 6, and 10, the refined strategy emphasizes strict adherence to valid operations and logical progression, avoiding assumptions about intermediate numbers not directly derived from the initial set. Key insights include:\n\n1. **Use only the original numbers and intermediate results obtained through legitimate operations.** Do not assume the existence of numbers like 20 unless explicitly created by combining available numbers (e.g., 4 \u00d7 5 = 20). Reusing or re-creating numbers without valid operations leads to invalid steps.\n\n2. **Prioritize operations that produce intermediate numbers close to 24.** For example, multiplying 4 and 5 yields 20, which is near 24 and easier to adjust via addition or subtraction. Such \"near targets\" can guide subsequent steps.\n\n3. **Avoid invalid shortcuts or assumptions.** For instance, creating 20 directly from 4 and 10 is invalid unless explicitly derived (e.g., 4 \u00d7 5 = 20). Attempting to use 20 without proper derivation is illegal and leads to dead ends.\n\n4. **Focus on valid combinations:**\n   - Combining 4 and 5: 4 \u00d7 5 = 20\n   - Using 6 and 10 with 20: consider operations like 20 + 4, 20 + 6, or dividing, but only if valid.\n\n5. **Be cautious",
+                    "value_summary": "In evaluating moves within the 24 game for the numbers 4, 5, 6, and 10, the key principles hinge on legality, logical progression, and proper use of available numbers. A move is *legal* if it employs only the current set of remaining numbers exactly once, applies valid operations (+, \u2212, \u00d7, \u00f7), and results in an intermediate value consistent with the rules\u2014no introducing extraneous values or reusing numbers improperly. When combining two numbers, the resulting value replaces those used, reducing the set accordingly. Immediate victory moves, such as 4 \u00d7 6 = 24, are highly promising, as they directly solve the puzzle. Moves that reduce the number of remaining options while maintaining valid operations help steer toward solutions efficiently.\n\nFrom the recent attempt, several insights emerge. First, intermediate results must be tracked carefully: any new number created from an operation becomes part of the remaining set, replacing the original operands. For example, if 4 and 5 are combined to produce 20, then 20 replaces 4 and 5 in the set, leaving {20, 6, 10}. Subsequent operations must use only these available numbers, and no intermediate value should be reused improperly. Second, it's crucial to verify that each step employs only current, legitimate values\u2014avoiding any reuse of intermediate results unless explicitly reintroduced. Third, operations that attempt to use values not derived legitimately (e.g., reusing a value already consumed, or creating a value outside the current set) are invalid.\n\nTherefore, an effective evaluation model emphasizes: (1) verifying the legality of each move by ensuring only available numbers"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 + 4 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 + 6 = 26  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 + 10 = 30  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 10 = 10\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 + 4 = 24 (left: 10)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 + 4 = 24 (left: 10)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10)\n10 + 4 = 14 (left: 5 6 14)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10)\n10 + 6 = 16 (left: 4 5 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10)\n10 + 5 = 15 (left: 4 6 15)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10)\n10 - 4 = 6 (left: 5 6 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10)\n10 - 5 = 5 (left: 4 6 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10)\n10 - 6 = 4 (left: 4 5 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10)\n10 / 2 (not possible, no 2)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10)\n10 * 1 (not possible, no 1)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 + 4 = 24 (left: 10)\n10 + 4 = 14 (left: 5 6 14)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 + 4 = 24 (left: 10)\n10 + 6 = 16 (left: 4 5 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 + 4 = 24 (left: 10)\n10 + 5 = 15 (left: 4 6 15)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 + 4 = 24 (left: 10)\n10 - 4 = 6 (left: 5 6 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 + 4 = 24 (left: 10)\n10 - 5 = 5 (left: 4 6 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 + 4 = 24 (left: 10)\n10 - 6 = 4 (left: 4 5 4)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10)\n10 + 4 = 14 (left: 5 6 14)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10)\n10 + 6 = 16 (left: 4 5 16)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "For solving the 24 puzzle with the numbers 4, 5, 6, and 10, the key strategy is to strictly operate within the initial set, ensuring all intermediate results are directly derived from these numbers through valid operations. Recognize that 20 can be formed by multiplying 4 and 5 (4\u00d75=20), which is a crucial step since it creates a near-target number close to 24. From there, additions or subtractions involving 6 and 10 should be carefully considered to reach 24.\n\nAvoid invalid steps such as assuming the existence of numbers not explicitly generated from the initial set. For example, do not treat 20 as a given unless explicitly obtained via 4\u00d75; otherwise, any step involving 20 without that derivation is invalid. When combining 20 with other numbers, check if the operations can lead directly to 24\u2014e.g., 20 + 4 = 24\u2014making that a promising pathway.\n\nGiven the initial set, an effective approach is to focus on forming 20 first, then adjusting with remaining numbers. For instance, after obtaining 20, adding 4 yields 24. Alternatively",
+                    "value_summary": "In the 24 game with numbers 4, 5, 6, and 10, effective move evaluation hinges on legality, logical progression, and strategic value. A move is *legal* if it uses only the current available numbers exactly once, applies valid operations (+, \u2212, \u00d7, \u00f7), and produces an intermediate result consistent with these constraints. Combining two numbers replaces them with their result, which then becomes part of the remaining set. Moves that directly produce 24, such as 4 \u00d7 6, are highly promising, as they solve the puzzle immediately. Intermediate results must be tracked carefully; using or reusing values illegitimately invalidates the move."
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 + 4 = 24 (left: )  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Using 20 and 4 directly yields 24)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.0,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Using 20 and 4 directly yields 24)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Using 20 and 4 directly yields 24)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n20 + 4 = 24 (left: 10 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Using 20 and 4 directly yields 24)\n20 + 4 = 24 (left: )\n"
+                            ],
+                            "values": [
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)  \n20 + 4 = 24 (left: 10 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Using 20 and 4 directly yields 24)\n20 + 4 = 24 (left: )\n"
+                            ]
+                        }
+                    ],
+                    "summary": "For solving the 24 puzzle with 4, 5, 6, and 10, focus on systematically combining the numbers using valid operations while respecting the initial set. The key is to generate intermediate results that are directly derived from the original numbers without reusing or neglecting any. Notably, forming 20 via 4\u00d75 is a strong starting point, as 20 is close to 24, making addition or subtraction straightforward. After obtaining 20, adding 4 yields 24, but only if 4 remains unused; otherwise, look for alternative pathways. \n\nCrucially, avoid dropping or reusing numbers without proper operations, especially when the leftover set isn't consistent with initial usage. For example, after using 4 and 5, the remaining numbers should be 6 and 10; combining these with 20 or other intermediate results must be done with valid operations that directly relate to original numbers. Consider forming 6 or 10 in ways that can complement your approach",
+                    "value_summary": "In evaluating moves for the 4, 5, 6, and 10, focus on legality, strategic potential, and logical progression. A move is promising if it uses two available numbers exactly once with valid operations (+, \u2212, \u00d7, \u00f7), producing an intermediate result that keeps options open toward 24. Immediate solutions, such as 4 \u00d7 6 = 24, are optimal and should be prioritized. When combining numbers, note that remaining values should be tracked precisely, as improper reuse or invalid operations (e.g., dividing by zero, reusing a number) invalidate moves. After each step, assess the remaining numbers; for example, after "
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n"
+                            ],
+                            "values": [
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n20 + 4 = 24 (left: 5 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n20 + 4 = 24 (left: 5 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n20 + 4 = 24 (left: 5 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n20 + 4 = 24 (left: 5 6 10)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n20 + 4 = 24 (left: 5 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n20 + 4 = 24 (left: 5 6 10)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To effectively solve the 24 puzzle with the numbers 4, 5, 6, and 10, focus on leveraging the most promising combinations early, especially those that bring you close to 24. Recognize that multiplying 4 and 5 yields 20, which is a key stepping stone, since adding 4 or 6 to 20 can directly reach 24.\n\nStart by forming 20 via 4 \u00d7 5. This is a reliable, 'sure' move because it uses two of the original numbers without ambiguity. From there, examine options to reach 24:\n\n- Adding 4 to 20 yields 24, but this requires reusing 4, which is invalid unless it was not used yet. Since 4 is already used in forming 20, consider whether other operations or intermediate steps can incorporate the leftover numbers 6 and 10 to complement this.\n\nNext, explore combining 6 and 10:\n\n- 6 + 10 = 16, which is not directly helpful, but combining 6 and 10 via multiplication (6\u00d710=60) is too large, so look for division or subtraction options.\n\n- Subtracting 6 from 10 gives 4, which is promising because 4 is part of the original set. If you can isolate 4 in a step, it can be combined with 20 for the final total.\n\nA potential sequence:\n\n1. Form 20 from 4\u00d75 (sure).\n2. Use 10 - 6 = 4 (sure) to generate another 4.\n3. Combine the two 4s:",
+                    "value_summary": "In evaluating moves for the numbers 4, 5, 6, and 10, prioritize moves that combine two numbers using valid operations (+, \u2212, \u00d7, \u00f7) to produce intermediate results that keep the goal of 24 achievable. Immediate solutions (e.g., 4 \u00d7 6) are optimal and should be favored. Carefully track remaining numbers after each step, ensuring each is used exactly once without invalid operations like division by zero or reuse. Moves that produce results leading to dead ends"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 10 = 10 (left: 10 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 6 = 14 (left: 14)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 4 = 14 (left: 14)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n6 - 4 = 2 (left: 2 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 4 = 6 (left: 6 4)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                40.001,
+                                60.0,
+                                20.002,
+                                40.001,
+                                21.001,
+                                60.0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 4 = 6 (left: 6 4)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 6)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 4 = 6 (left: 6 4)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 6)\n10 - 6 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 4 = 6 (left: 6 4)\n10 - 6 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 4 = 6 (left: 6 4)\n4 * 4 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 4 = 6 (left: 6 4)\n16 + 8 = 24 (left: )\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 6)\n10 - 6 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 4 = 6 (left: 6 4)\n10 - 6 = 4 (left: 4 4)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To effectively solve the 24 puzzle with the numbers 4, 5, 6, and 10, focus on leveraging straightforward, reliable combinations that directly approach 24, while avoiding invalid or impossible steps. A key insight is to identify operations that produce intermediate results close to 24 using the original numbers without reusing or invalidly combining them.\n\nStart by examining the most promising multiplicative pairings. Notably, multiplying 4 and 5 yields 20, which is only 4 away from 24. This is a strong candidate for the base of your solution. From there, check if adding or adjusting with the remaining numbers can reach 24 efficiently.\n\nNext, consider the other numbers:\n\n- Combining 6 and 10 via addition yields 16, which is less helpful unless you can add 8, but 8 isn't directly available.\n- Subtracting 6 from 10 yields 4, which matches the number already involved in the 20. Using this, you can generate another 4, but be cautious\u2014using the same number twice is invalid unless derived through operations.\n\nA reliable sequence involves:\n\n1. Form 20 by multiplying 4\u00d75.\n2. Use 10\u22126=4 to generate another 4.\n3. Combine the two 4s with addition: 20 + 4 = 24.\n\nHowever, note that in the initial set, you can't add 20 and 4 directly because 20 is",
+                    "value_summary": "To effectively evaluate moves with 4, 5, 6, and 10, prioritize combinations that produce intermediate results closer to 24 or facilitate reaching it. Avoid moves leading to dead ends or impossible configurations (e.g., results like 16 or 20)."
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 5 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 + 4 = 8 (left: 5 6 8)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n(Additional steps are possible but these are the direct, promising steps toward 24)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                60.0,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 5 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10 20)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 5 6 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 5 6 10)\n10 - 6 = 4 (left: 4 5 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 5 6 10)\n4 + 4 = 8 (left: 5 8)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 5 6 10)\n4 * 5 = 20 (left: 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 5 6 10)\n20 - 8 = 12 (left: 12)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 5 6 10)\n12 + 12 = 24 (left: )\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10 20)\n10 - 6 = 4 (left: 4 4 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10 20)\n4 * 5 = 20 (left: 4 20)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10 20)\n4 + 4 = 8 (left: 8 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10 20)\n4 * 6 = 24 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10 20)\n4 + 6 = 10 (left: 4 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 * 5 = 20 (left: 10 20)\n10 - 6 = 4 (left: 4 4)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 5 6 10)\n10 - 6 = 4 (left: 4 5 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 - 6 = 4 (left: 4 5 6 10)\n4 + 4 = 8 (left: 5 8)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To effectively solve the 24 puzzle with the numbers 4, 5, 6, and 10, focus on valid, straightforward combinations that lead toward 24 without reusing or invalidly combining numbers. Leverage direct multiplicative pairs, notably recognizing that 4 \u00d7 5 = 20 is close to 24, and consider how to incorporate the remaining numbers to reach the target.\n\nA key approach is to generate intermediate values that are achievable from the original set. For instance, subtracting 6 from 10 yields 4 (10\u22126=4), which is present in the original numbers. Once you have multiple 4s, combining them via addition (4+4=8) or multiplication can help approach 24.\n\nAvoid invalid operations such as creating numbers not in the initial set (e.g., using 20 directly) or reusing numbers improperly. For example, multiplying 4 and 5 to get 20 is valid, but using 20 in subsequent steps without deriving it properly from the initial numbers is invalid.\n\nA reliable sequence involves:\n1. Form 20 by multiplying 4\u00d75.\n2. Generate another 4 by subtracting 6 from 10: 10\u22126=4.\n3. Add",
+                    "value_summary": "In evaluating moves with 4, 5, 6, and 10, prioritize operations that directly progress toward 24 or create intermediate results close to it. Valid moves involve combining available numbers through addition, subtraction, multiplication, or division\u2014ensuring all operands are from the original set without reuse or illegal operations. Moves that produce results outside the feasible range (e.g., 16, 20, or invalid intermediate totals) are less promising. Avoid steps that rely on forming or referencing numbers not present initially (e.g., creating 20 from 10 and "
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 5 = 15 (left: 4 15)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 10 = 2 (left: 2 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 10 = 10 (left: 4 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 4 = 5 (left: 5 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 15 = 5 (left: 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 4 = 5 (left: 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 16 = 4 (left: 4)\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003,
+                                0.003
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n16 / 4 = 4 (left: 16 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n16 - 4 = 12 (left: 16 12)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n16 + 8 = 24 (left: 8)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n8 * 3 = 24 (left: 16 3)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n12 + 12 = 24 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n4 + 4 = 8 (left: 8)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n4 * 4 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n4 / 4 = 1 (left: 1)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4 4)\n4 - 4 = 0 (left: 0)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n16 / 4 = 4 (left: 16 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n16 - 4 = 12 (left: 16 12)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To solve the 24 puzzle with the numbers 4, 5, 6, and 10, focus on generating intermediate values that facilitate reaching 24 through valid operations. A key insight is to utilize the difference between 10 and 6:  \n**10 - 6 = 4**, which yields a 4 present in the original set, creating a reliable starting point. From here, avoid reusing or invalidly combining numbers. For example, after obtaining 4 from 10\u22126, recognize that the remaining numbers are 4 and 5. Combining these, **4 + 5 = 9**, or **4 \u00d7 5 = 20**, are useful intermediate steps. Multiplying 4 and 5 to get 20 is promising because 20 is close to 24, and adding the remaining 4 (from earlier) can help reach the target. Alternatively, using the previously derived 4 to construct 8 (via 4 + 4) and then combining with other intermediate results can also be",
+                    "value_summary": "In evaluating moves within the 24 game involving the numbers 4, 5, 6, and 10, it is essential to establish a clear, goal-oriented framework that guides decision-making. The core principle is to prioritize operations that directly advance toward forming 24 or produce intermediate results close to it. Moves that generate values near 24\u2014such as 20, 16, 18, or 22\u2014are promising, as they provide manageable pathways to reach the target through subsequent operations. Conversely, results far from 24 (e.g., 0, 2, 30) are less promising, especially if they complicate the path to 24 or involve overly complex calculations.\n\nOperations should only involve the original numbers without reuse or referencing numbers not present initially. Valid moves include addition, subtraction, multiplication, or division, provided they produce feasible intermediate totals. For example, subtracting 6 from 10 to get 4 is promising because it simplifies the set and retains the potential to reach 24 efficiently. Conversely, attempts to produce results like 20 from 10 and 5 (via multiplication) are promising, but forming impossible or redundant intermediate values (like repeatedly using the same number without proper replacement) diminishes move quality.\n\nIn the specific context of 4, 5, 6, and 10, moves that replace two numbers with their combined result should always be validated for legality: they must use original numbers, avoid reuse, and produce"
+                },
+                {
+                    "steps": [
+                        {
+                            "step": 0,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n4 + 20 = 24 (left: )\n"
+                            ],
+                            "values": [
+                                0.003,
+                                0.003,
+                                0.0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4)\n"
+                            ]
+                        },
+                        {
+                            "step": 1,
+                            "x": "4 5 6 10",
+                            "ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4)\n"
+                            ],
+                            "new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n16 * 1 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n16 / 1 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n16 - 0 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n16 + 0 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4)\n4 * 6 = 24 (left: 10 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4)\n10 + 5 + 4 = 19 (left: )\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4)\n10 + 6 = 16 (left: 4 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4)\n10 - 6 = 4 (left: 4 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4)\n5 * 4 = 20 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4)\n5 + 4 = 9 (left: 10)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4)\n6 + 4 = 10 (left: 5)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 / 5 = 4 (left: 4)\n6 - 4 = 2 (left: 5)\n"
+                            ],
+                            "values": [
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "select_new_ys": [
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n16 * 1 = 16 (left: 16)\n",
+                                "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n20 - 4 = 16 (left: 16)\n16 / 1 = 16 (left: 16)\n"
+                            ]
+                        }
+                    ],
+                    "summary": "To efficiently solve the 24 puzzle with the numbers 4, 5, 6, and 10, leverage key intermediate results that bridge toward 24. A pivotal insight is to recognize operations that recreate or approximate 24 early, such as multiplying 4 and 6 (4 \u00d7 6 = 24), which directly yields the target. If that path isn't viable, consider combining numbers to generate intermediate multiples or sums close to 24. For instance, 10 + 5 = 15 or 10 + 6 = 16; then, use these to approach 24 via addition, subtraction, or multiplication.\n\nA practical strategy involves exploring the difference operations with 10 and 6, since 10 - 6 = 4, which is already in the set, creating a reliable starting point. From 4, combine with 5 to reach 9 or multiply to get 20, which is close to 24. For example, 4 \u00d7 5 = 20, and adding 4 yields 24 (20 + 4 = 24). Alternatively, combining 5 and 6 as 5",
+                    "value_summary": "In evaluating moves within the 24 game for the numbers 4, 5, 6, and 10, it is crucial to focus on the legality, efficiency, and proximity to the target 24. Valid moves must involve only the original numbers without reuse or referencing invalid intermediate results. Operations\u2014addition, subtraction, multiplication, or division\u2014are promising when they produce intermediate values near 24, such as 20, 16, 18, or 22, as these values facilitate straightforward paths to 24. Conversely, results far from 24, like 0, 2, or 30, indicate less promising moves due to increased complexity or dead ends.\n\nWhen combining two numbers, the move's value depends on whether it simplifies the remaining set toward 24. For instance, reducing larger numbers or creating intermediate totals close to 24 is advantageous. Moves that produce impossible or invalid results\u2014such as referencing numbers outside the"
+                }
+            ],
+            "env_info": [
+                {
+                    "action": "5 + 19 = 24 (left: 24)\nAnswer: 5 + 6 + 10 + 4 = 24\n20 - 4 = 16 (left: 4, 20)\n4 + 20 = 24 (left: 24)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "10 - 6 = 4 (left: 4 5 4)\n10 - 4 = 6 (left: 4 6)\n4 * 6 = 24 (left: 24)\nAnswer: (10 - 6) * (10 - 4) = 24\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "10 - 6 = 4 (left: 4 5 4)\n5 * 4 = 20 (left: 4 20)\n10 + 14 = 24 (left: 4 6)\n10 - 6 = 4 (left: 4 4)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "10 / 5 = 2 (left: 2 6 10)\n10 - 6 = 4 (left: 4 2)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "10 / 5 = 2 (left: 2 6 10)\n10 / 5 = 2 (left: 2 6 2)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "4 * 6 = 24 (left: 24)\nAnswer: 4 * 6 = 24\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "20 / 5 = 4 (left: 4 4)\n4 * 6 = 24 (left: 10)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "10 + 10 = 20 (left: 4 4 20)\n20 / 5 = 4 (left: 4 4)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "20 / 5 = 4 (left: 4 4)\n4 * 6 = 24 (left: 10)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "10 + 14 = 24 (left: 4 6 10)\n4 * 6 = 24 (left: 10)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "10 / 5 = 2 (left: 4 2)\n4 * 6 = 24 (left: 10)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "20 * 1 = 20 (left: 4 20)\n20 / 4 = 5 (left: 5)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "20 / 5 = 4 (left: 4 20)\n20 / 5 = 4 (left: 4 20)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "20 - 4 = 16 (left: 16)  \n  \n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "4 * 5 = 20 (left: 10)\n10 + 4 = 14 (left: 5 6 14)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "20 - 4 = 16 (left: 16)  \n20 + 4 = 24 (left: 10 6)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "20 - 4 = 16 (left: 16)\n20 + 4 = 24 (left: 5 6 10)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "20 / 5 = 4 (left: 4 6)\n10 - 6 = 4 (left: 4 4)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "10 - 6 = 4 (left: 4 5 6 10)\n10 - 6 = 4 (left: 4 5 4)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "20 - 4 = 16 (left: 16)\n16 / 4 = 4 (left: 16 4)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                },
+                {
+                    "action": "20 - 4 = 16 (left: 16)\n16 * 1 = 16 (left: 16)\n",
+                    "history": [
+                        "10 - 6 = 4 (left: 4 5 4)",
+                        "5 * 4 = 20 (left: 4 20)"
+                    ]
+                }
+            ],
+            "usage_so_far": {
+                "completion_tokens": 252156,
+                "prompt_tokens": 173760,
+                "cost": 8.51832
+            }
+        }
+    ],
+    "summary": {
+        "correct": 0,
+        "total_puzzles": 1,
+        "accuracy": 0.0,
+        "cost": {
+            "completion_tokens": 252156,
+            "prompt_tokens": 173760,
+            "cost": 8.51832
+        }
+    }
+}

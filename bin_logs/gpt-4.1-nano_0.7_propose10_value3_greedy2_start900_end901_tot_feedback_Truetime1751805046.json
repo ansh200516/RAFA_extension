@@ -1,0 +1,86 @@
+[
+    {
+        "idx": 900,
+        "agent_info": [
+            {
+                "steps": [
+                    {
+                        "step": 0,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            ""
+                        ],
+                        "new_ys": [
+                            "Input: 4 5 6 10\n"
+                        ],
+                        "values": [
+                            0.002
+                        ],
+                        "select_new_ys": [
+                            "Input: 4 5 6 10\n"
+                        ]
+                    },
+                    {
+                        "step": 1,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            "Input: 4 5 6 10\n"
+                        ],
+                        "new_ys": [
+                            "Input: 4 5 6 10\nInput: 4 5 6 10\n"
+                        ],
+                        "values": [
+                            0.001
+                        ],
+                        "select_new_ys": [
+                            "Input: 4 5 6 10\nInput: 4 5 6 10\n"
+                        ]
+                    },
+                    {
+                        "step": 2,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            "Input: 4 5 6 10\nInput: 4 5 6 10\n"
+                        ],
+                        "new_ys": [
+                            "Input: 4 5 6 10\nInput: 4 5 6 10\nInput: 4 5 6 10\n"
+                        ],
+                        "values": [
+                            0.001
+                        ],
+                        "select_new_ys": [
+                            "Input: 4 5 6 10\nInput: 4 5 6 10\nInput: 4 5 6 10\n"
+                        ]
+                    },
+                    {
+                        "step": 3,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            "Input: 4 5 6 10\nInput: 4 5 6 10\nInput: 4 5 6 10\n"
+                        ],
+                        "new_ys": [
+                            "Input: 4 5 6 10\nInput: 4 5 6 10\nInput: 4 5 6 10\nInput: 4 5 6 10\n"
+                        ],
+                        "values": [
+                            0
+                        ],
+                        "select_new_ys": [
+                            "Input: 4 5 6 10\nInput: 4 5 6 10\nInput: 4 5 6 10\nInput: 4 5 6 10\n"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "env_info": [
+            {
+                "action": "Input: 4 5 6 10\nInput: 4 5 6 10\nInput: 4 5 6 10\nInput: 4 5 6 10\n",
+                "history": []
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 9763,
+            "prompt_tokens": 2642,
+            "cost": 0.2481
+        }
+    }
+]

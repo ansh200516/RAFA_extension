@@ -1,0 +1,28 @@
+[
+    {
+        "idx": 900,
+        "agent_info": [
+            {
+                "steps": []
+            },
+            {
+                "steps": []
+            }
+        ],
+        "env_info": [
+            {
+                "action": "",
+                "history": []
+            },
+            {
+                "action": "",
+                "history": []
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 109,
+            "prompt_tokens": 1171,
+            "cost": 0.04167
+        }
+    }
+]

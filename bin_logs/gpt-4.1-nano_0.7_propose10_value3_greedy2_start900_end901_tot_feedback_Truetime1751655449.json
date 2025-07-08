@@ -1,0 +1,235 @@
+[
+    {
+        "idx": 900,
+        "agent_info": [
+            {
+                "steps": [
+                    {
+                        "step": 0,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            ""
+                        ],
+                        "new_ys": [
+                            "Possible next steps:\n",
+                            "4 + 5 = 9 (left: 9 6 10)\n",
+                            "4 - 5 = -1 (left: -1 6 10)\n",
+                            "5 - 4 = 1 (left: 1 6 10)\n",
+                            "4 * 5 = 20 (left: 20 6 10)\n",
+                            "5 / 4 = 1.25 (left: 1.25 6 10)\n",
+                            "4 + 6 = 10 (left: 10 10)\n",
+                            "4 - 6 = -2 (left: -2 10)\n",
+                            "6 - 4 = 2 (left: 2 10)\n",
+                            "4 * 6 = 24 (left: 24 10)\n"
+                        ],
+                        "values": [
+                            40.001,
+                            21.001,
+                            0.002,
+                            0.003,
+                            40.001,
+                            2.001,
+                            0.003,
+                            0.003,
+                            20.002,
+                            0.003
+                        ],
+                        "select_new_ys": [
+                            "Possible next steps:\n",
+                            "4 * 5 = 20 (left: 20 6 10)\n"
+                        ]
+                    },
+                    {
+                        "step": 1,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            "Possible next steps:\n",
+                            "4 * 5 = 20 (left: 20 6 10)\n"
+                        ],
+                        "new_ys": [
+                            "Possible next steps:\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\n",
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for input: 20 6 10\n"
+                        ],
+                        "values": [
+                            60.0,
+                            20.0
+                        ],
+                        "select_new_ys": [
+                            "Possible next steps:\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\n",
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for input: 20 6 10\n"
+                        ]
+                    },
+                    {
+                        "step": 2,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            "Possible next steps:\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\n",
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for input: 20 6 10\n"
+                        ],
+                        "new_ys": [
+                            "Possible next steps:\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\n",
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for input: 20 6 10\nPossible next steps for input: 20 6 10\n"
+                        ],
+                        "values": [
+                            20.001,
+                            40.0
+                        ],
+                        "select_new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for input: 20 6 10\nPossible next steps for input: 20 6 10\n",
+                            "Possible next steps:\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\n"
+                        ]
+                    },
+                    {
+                        "step": 3,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for input: 20 6 10\nPossible next steps for input: 20 6 10\n",
+                            "Possible next steps:\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\n"
+                        ],
+                        "new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for input: 20 6 10\nPossible next steps for input: 20 6 10\nPossible next steps for input: 20 6 10\n",
+                            "Possible next steps:\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\n"
+                        ],
+                        "values": [
+                            0,
+                            0
+                        ],
+                        "select_new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for input: 20 6 10\nPossible next steps for input: 20 6 10\nPossible next steps for input: 20 6 10\n",
+                            "Possible next steps:\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\nPlease provide the four numbers you want to use in the game of 24, and I will generate the possible next steps for you.\n"
+                        ]
+                    }
+                ]
+            },
+            {
+                "steps": [
+                    {
+                        "step": 0,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\n"
+                        ],
+                        "new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nGiven the input: 20 6 10\n"
+                        ],
+                        "values": [
+                            0.003
+                        ],
+                        "select_new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nGiven the input: 20 6 10\n"
+                        ]
+                    },
+                    {
+                        "step": 1,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nGiven the input: 20 6 10\n"
+                        ],
+                        "new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nGiven the input: 20 6 10\nGiven the input: 20 6 10\n"
+                        ],
+                        "values": [
+                            0.003
+                        ],
+                        "select_new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nGiven the input: 20 6 10\nGiven the input: 20 6 10\n"
+                        ]
+                    },
+                    {
+                        "step": 2,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nGiven the input: 20 6 10\nGiven the input: 20 6 10\n"
+                        ],
+                        "new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nGiven the input: 20 6 10\nGiven the input: 20 6 10\nGiven the input: 20 6 10\n"
+                        ],
+                        "values": [
+                            0
+                        ],
+                        "select_new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nGiven the input: 20 6 10\nGiven the input: 20 6 10\nGiven the input: 20 6 10\n"
+                        ]
+                    }
+                ]
+            },
+            {
+                "steps": [
+                    {
+                        "step": 0,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\n"
+                        ],
+                        "new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for the input: 20 6 10\n"
+                        ],
+                        "values": [
+                            0.003
+                        ],
+                        "select_new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for the input: 20 6 10\n"
+                        ]
+                    },
+                    {
+                        "step": 1,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for the input: 20 6 10\n"
+                        ],
+                        "new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for the input: 20 6 10\nPossible next steps for the input: 20 6 10\n"
+                        ],
+                        "values": [
+                            0.003
+                        ],
+                        "select_new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for the input: 20 6 10\nPossible next steps for the input: 20 6 10\n"
+                        ]
+                    },
+                    {
+                        "step": 2,
+                        "x": "4 5 6 10",
+                        "ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for the input: 20 6 10\nPossible next steps for the input: 20 6 10\n"
+                        ],
+                        "new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for the input: 20 6 10\nPossible next steps for the input: 20 6 10\nPossible next steps for the input: 20 6 10\n"
+                        ],
+                        "values": [
+                            0
+                        ],
+                        "select_new_ys": [
+                            "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for the input: 20 6 10\nPossible next steps for the input: 20 6 10\nPossible next steps for the input: 20 6 10\n"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "env_info": [
+            {
+                "action": "4 * 5 = 20 (left: 20 6 10)\nPossible next steps for input: 20 6 10\nPossible next steps for input: 20 6 10\nPossible next steps for input: 20 6 10\n",
+                "history": [
+                    "4 * 5 = 20 (left: 20 6 10)"
+                ]
+            },
+            {
+                "action": "Given the input: 20 6 10\nGiven the input: 20 6 10\nGiven the input: 20 6 10\n",
+                "history": [
+                    "4 * 5 = 20 (left: 20 6 10)"
+                ]
+            },
+            {
+                "action": "Possible next steps for the input: 20 6 10\nPossible next steps for the input: 20 6 10\nPossible next steps for the input: 20 6 10\n",
+                "history": [
+                    "4 * 5 = 20 (left: 20 6 10)"
+                ]
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 25002,
+            "prompt_tokens": 18057,
+            "cost": 0.8611800000000001
+        }
+    }
+]
