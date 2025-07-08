@@ -236,11 +236,28 @@ while True:
             print(colored('Invalid puzzle index. Must be an integer.', 'red'))
         continue
 
-    if cmd == 'cvq':
-        stats_per_method = get_stats_from_logs(log_data)
+    if cmd.startswith('cvq'):
+        parts = cmd.split()
+        methods_to_plot = parts[1:]
+
+        data_to_plot = log_data
+        if methods_to_plot:
+            valid_methods = [m for m in methods_to_plot if m in log_data]
+            invalid_methods = [m for m in methods_to_plot if m not in log_data]
+
+            if invalid_methods:
+                print(colored(f"Methods not found: {', '.join(invalid_methods)}", "yellow"))
+
+            if not valid_methods:
+                print(colored("None of the specified methods were found. Aborting graph generation.", "red"))
+                continue
+            
+            data_to_plot = {m: log_data[m] for m in valid_methods}
+
+        stats_per_method = get_stats_from_logs(data_to_plot)
         
         if not stats_per_method:
-            print(colored("No stats found in logs to generate graph.", "red"))
+            print(colored("No stats found for the selected methods to generate graph.", "red"))
             continue
 
         draw_cvq_graph(stats_per_method)
