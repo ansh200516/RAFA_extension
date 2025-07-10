@@ -12,7 +12,7 @@ TASK_END_INDEX=915
 PLANNING="summary"
 K_MEMORY=1
 FEEDBACK_ENABLED=true # Set to true to enable feedback, false to disable
-SUMMARY_SIZE_PERCENTAGE=10 # Percentage of the input text to use for the summary
+SUMMARY_SIZE_PERCENTAGE=70 # Percentage of the input text to use for the summary
 
 # Tree of Thoughts (ToT) arguments
 PROMPT_SAMPLE="standard"
